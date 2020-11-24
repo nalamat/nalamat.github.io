@@ -60,23 +60,55 @@ layout: home
       width: 100%;
       padding: 5% 10%;
       overflow-y: scroll;
-      color: rgb(0,0,70);
+      color: rgb(0,0,100);
     }
     .content .header {
       margin-top: 1em;
-      padding: .3em;
-      text-align: center;
-      font-size: 32px;
+      padding: .3em 20px;
+      /* text-align: center; */
+      font-size: 28px;
       font-weight: bold;
       color: white;
-      background: rgb(100,140,230);
-      /* background: rgb(200,160,255); */
+      /* background: rgb(100,140,230); */
+      /* color: rgb(0,0,100); */
+      /* background: rgb(220,220,255); */
+      color: rgb(70,70,180);
+      background: rgb(235,235,255);
+    }
+    .content .rows {
+      margin: 20px 20px;
+    }
+    .content .rows .cols {
+      display: flex;
+      margin: 3px 0;
+      justify-content: space-between;
+    }
+    .content .rows .cols .info {
+      font-size: 90%;
+    }
+    .content .rows .more {
+      margin: 6px 20px;
+      color: rgb(0,0,130);
+      /* font-size: 90% */
+    }
+    .content .emphasis {
+      color: inherit;
+      font-weight: normal;
+      font-style: italic;
+      text-decoration: underline;
+    }
+    .content .nodecoration {
+      color: inherit;
+      font-weight: inherit;
+      font-style: inherit;
+      text-decoration: inherit;
     }
     .content p {
       text-align: justify;
+      padding: 0 20px;
     }
 
-    @media (max-width: 800px)
+    @media (max-width: 750px)
     {
         .container
         {
@@ -128,26 +160,111 @@ layout: home
         <p>My role as a graduate student in neuroscience has evolved around computational modeling of hearing phenomena through analyzing large amounts of brain signals by parallelized implementation of machine learning methods (such as K-SVD), and statistical modeling of human sound localization data using nonlinear mixed-effects model (NLME). Meanwhile, I enjoyed assisting Prof. Antje Ihlefeld in setting up an entire animal research lab (from designing hardware to writing software) and mentoring undergraduate students towards obtaining research grants.</p>
 
         <div class='header'>Education</div>
-        <p>Ph.D. in Biomedical Engineering, New Jersey Institute of Technology, Newark, NJ</p>
-        <p>MicroMasters in Statistics & Data Science, Massachusetts Institute of Technology, Online</p>
-        <p>B.S. in Electrical Engineering, University of Isfahan, Isfahan, Iran</p>
+
+        <div class='rows'>
+          <div class='cols'>
+            <div><b>Ph.D. in Biomedical Engineering</b></div>
+            <div class='info'>Sep 2015 - 2021 (Exp)</div>
+          </div>
+          <div class='cols'>
+            <div><a class='nodecoration' href='https://njit.edu'>New Jersey Institute of Technology</a></div>
+            <div class='info'>Newark, NJ</div>
+          </div>
+          <div class='more'>
+            Received the <a class='emphasis' href='https://engineering.njit.edu/students-awards'>2020 NCE Outstanding Graduate Student Award</a>
+            <br>
+            Computational neuroscience, data science, signal processing of brain waves, statistical modeling
+          </div>
+        </div>
+
+        <div class='rows'>
+          <div class='cols'>
+            <div><b><a class='nodecoration' href='https://micromasters.mit.edu/ds/'>MicroMasters in Statistics & Data Science</a></b></div>
+            <div class='info'>Sep 2019 - 2021 (Exp)</div>
+          </div>
+          <div class='cols'>
+            <div><a class='nodecoration' href='https://mit.edu'>Massachusetts Institute of Technology</a></div>
+            <div class='info'>Online</div>
+          </div>
+          <div class='more'>
+            Program offered by MIT on the edX platform
+            <br>
+            Probability, data analysis, statistics and machine learning
+          </div>
+        </div>
+
+        <div class='rows'>
+          <div class='cols'>
+            <div><b>B.S. in Electrical Engineering</b></div>
+            <div class='info'>Sep 2009 - Sep 2013</div>
+          </div>
+          <div class='cols'>
+            <div><a class='nodecoration' href='https://ui.ac.ir/EN'>University of Isfahan</a></div>
+            <div class='info'>Isfahan, Iran</div>
+          </div>
+          <div class='more'>
+            <span class='emphasis'>Summa cum laude:</span> Ranked 1st among all Electrical Engineering undergraduate students
+            <br>
+            Microchip design, multi-objective optimization, genetic algorithm, parallelized simulation
+          </div>
+        </div>
 
         <div class='header'>Experience</div>
-        <p>Graduate Research Assistant, NESH Laboratory, New Jersey Institute of Technology, Newark, NJ</p>
-        <p>Graduate Research Assistant, Laboratory of Denis Paré, Rutgers University, Newark, NJ</p>
-        <p>Research & Development Engineer, Novin Medical Engineering Co., Isfahan, Iran</p>
-        <p>Cofounder & Lead Engineer, Mahoor Engineering Co. (Startup), Isfahan Sci. & Tech. Town, Iran</p>
+
+        <div class='rows'>
+          <div class='cols'>
+            <div><b>Graduate Research Assistant</b></div>
+            <div class='info'>Sep 2015 - Current</div>
+          </div>
+          <div class='cols'>
+            <div><a class='nodecoration' href='http://ihlefeldlab.com'>NESH Laboratory</a>, New Jersey Institute of Technology</div>
+            <div class='info'>Newark, NJ</div>
+          </div>
+        </div>
+
+        <div class='rows'>
+          <div class='cols'>
+            <div><b>Graduate Research Assistant</b></div>
+            <div class='info'>Jan 2016 - Jun 2016</div>
+          </div>
+          <div class='cols'>
+            <div><a class='nodecoration' href='https://sites.rutgers.edu/pare-lab/'>Laboratory of Denis Paré</a>, Rutgers University</div>
+            <div class='info'>Newark, NJ</div>
+          </div>
+        </div>
+
+        <div class='rows'>
+          <div class='cols'>
+            <div><b>Research & Development Engineer</b></div>
+            <div class='info'>May 2013 - May 2014</div>
+          </div>
+          <div class='cols'>
+            <div><a class='nodecoration' href='https://novinmed.com/?lang=en'>Novin Medical Engineering Co.</a></div>
+            <div class='info'>Isfahan, Iran</div>
+          </div>
+        </div>
+
+        <div class='rows'>
+          <div class='cols'>
+            <div><b>Cofounder & Lead Engineer</b></div>
+            <div class='info'>May 2013 - May 2014</div>
+          </div>
+          <div class='cols'>
+            <div>Mahoor Engineering Co. (Startup)</div>
+            <div class='info'>Isfahan Sci. & Tech. Town, Iran</div>
+          </div>
+        </div>
 
         <div class='header'>Publications</div>
-        <p>A Ihlefeld, N Alamatsaz, and RM Shapley. “Population rate-coding predicts correctly that human sound localization depends on sound intensity.” eLife, 8, p.e47027, 2019.</p>
-        <p>N Alamatsaz, and A Ihlefeld. “Leveraging adaptation to study perceptual weighting of interaural time differences.” International Congress on Acoustics (ICA), vol. 23, no. 1, pp. 8253-8256, 2019.</p>
-        <p>A Ihlefeld, N Alamatsaz, and RM Shapley. “Circling back on theories of sound localization.” The Journal of the Acoustical Society of America (ASA), vol. 145, no. 3, pp. 1759, 2019.</p>
-        <p>N Alamatsaz, and A Ihlefeld. “The role of central processing in modulation masking release.” The Journal of the Acoustical Society of America (ASA), vol. 144, no. 3, pp. 1900, 2018.</p>
-        <p>A Boustani, N Alamatsaz, N Alamatsaz, and A Boustani. “Traffic volume reduction in smart grid networks by a cooperative intelligent interpolation technique.” Consumer Communications & Networking Conference (CCNC), 15th IEEE Annual, pp. 1-7, 2018.</p>
-        <p>N Alamatsaz, A Boustani, N Alamatsaz, and A Boustani. “Towards Efficient Privacy-Preserving Data Aggregation for Advanced Metering Infrastructure,” The International Journal of Computer Networks & Communications (IJCNC), vol. 9, no. 5, 2017.</p>
-        <p>A Ihlefeld, M Ning, SS Chaubal, and N Alamatsaz. “Neural correlates of modulation masking release: The role of sound deprivation.” The Journal of the Acoustical Society of America (ASA), vol. 141, no. 5, pp. 3894, 2017.</p>
-        <p>N Alamatsaz, RM Shapley, and A Ihlefeld. “The effect of sound intensity on lateralization with interaural time differences.” The Journal of the Acoustical Society of America (ASA), vol. 141, no. 5, pp. 3639, 2017.</p>
-        <p>N Alamatsaz, S Moradi, and P Moallem. “Towards Improved Safety, Selectivity and Energy Efficiency of Retinal Stimulation,” Iranian Conference on Biomedical Engineering (ICBME), vol. 21, 2014.</p>
+        <p>A Ihlefeld, <b>N Alamatsaz</b>, and RM Shapley. “Population rate-coding predicts correctly that human sound localization depends on sound intensity.” <i>eLife</i>, <i>8</i>, p.e47027, 2019.</p>
+        <p><b>N Alamatsaz</b>, and A Ihlefeld. “Leveraging adaptation to study perceptual weighting of interaural time differences.” <i>International Congress on Acoustics (ICA)</i>, vol. 23, no. 1, pp. 8253-8256, 2019.</p>
+        <p>A Ihlefeld, <b>N Alamatsaz</b>, and RM Shapley. “Circling back on theories of sound localization.” <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 145, no. 3, pp. 1759, 2019.</p>
+        <p><b>N Alamatsaz</b>, and A Ihlefeld. “The role of central processing in modulation masking release.” <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 144, no. 3, pp. 1900, 2018.</p>
+        <p>A Boustani, N Alamatsaz, <b>N Alamatsaz</b>, and A Boustani. “Traffic volume reduction in smart grid networks by a cooperative intelligent interpolation technique.” <i>Consumer Communications & Networking Conference (CCNC)</i>, <i>15th IEEE Annual</i>, pp. 1-7, 2018.</p>
+        <p>N Alamatsaz, A Boustani, <b>N Alamatsaz</b>, and A Boustani. “Towards Efficient Privacy-Preserving Data Aggregation for Advanced Metering Infrastructure,” <i>The International Journal of Computer Networks & Communications (IJCNC)</i>, vol. 9, no. 5, 2017.</p>
+        <p>A Ihlefeld, M Ning, SS Chaubal, and <b>N Alamatsaz</b>. “Neural correlates of modulation masking release: The role of sound deprivation.” <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3894, 2017.</p>
+        <p><b>N Alamatsaz</b>, RM Shapley, and A Ihlefeld. “The effect of sound intensity on lateralization with interaural time differences.” <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3639, 2017.</p>
+        <p><b>N Alamatsaz</b>, S Moradi, and P Moallem. “Towards Improved Safety, Selectivity and Energy Efficiency of Retinal Stimulation,” <i>Iranian Conference on Biomedical Engineering (ICBME)</i>, vol. 21, 2014.</p>
       </div>
     </div>
   </div>
