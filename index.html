@@ -13,6 +13,8 @@ layout: home
   <style>
     html, body {
       margin: 0 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
     }
 
     .container {
@@ -36,7 +38,7 @@ layout: home
     }
     .sidebar .title {
       margin: .5em 0;
-      font-size: 40px;
+      font-size: 44px;
       font-weight: bold;
     }
     .sidebar .favicons {
@@ -47,6 +49,12 @@ layout: home
     .sidebar .favicons a {
       color: white;
       margin: .3em;
+      text-decoration: inherit;
+    }
+    .sidebar .construction {
+      margin-top: 4em;
+      margin-bottom: 1em;
+      font-size: 20px;
     }
 
     .content {
@@ -60,7 +68,7 @@ layout: home
       width: 100%;
       padding: 5% 10%;
       overflow-y: scroll;
-      color: rgb(0,0,100);
+      color: rgb(0,0,50);
     }
     .content .header {
       margin-top: 1em;
@@ -72,7 +80,7 @@ layout: home
       /* background: rgb(100,140,230); */
       /* color: rgb(0,0,100); */
       /* background: rgb(220,220,255); */
-      color: rgb(70,70,180);
+      color: rgb(60,60,150);
       background: rgb(235,235,255);
     }
     .content .rows {
@@ -84,11 +92,12 @@ layout: home
       justify-content: space-between;
     }
     .content .rows .cols .info {
-      font-size: 90%;
+      /* font-size: 90%; */
+      text-align: right;
     }
     .content .rows .more {
       margin: 6px 20px;
-      color: rgb(0,0,130);
+      color: rgb(0,0,120);
       /* font-size: 90% */
     }
     .content .emphasis {
@@ -103,11 +112,14 @@ layout: home
       font-style: inherit;
       text-decoration: inherit;
     }
+    .content .nodecoration:hover {
+      text-decoration: underline;
+    }
     .content p {
       text-align: justify;
       padding: 0 20px;
     }
-
+    
     @media (max-width: 750px)
     {
         .container
@@ -117,7 +129,10 @@ layout: home
         .sidebar
         {
           width: 100%;
-          height: 200px;
+          height: auto;
+        }
+        .sidebar .construction {
+          margin-top: 2em;
         }
         .content
         {
@@ -125,8 +140,7 @@ layout: home
         }
         .content .inner
         {
-          /* padding-left: 20px;
-          padding-right: 20px; */
+          padding: 5% 5%;
           overflow-y: visible;
         }
     }
@@ -148,7 +162,7 @@ layout: home
           <a href='https://linkedin.com/in/nalamat'><i class="fab fa-linkedin"></i></a>
           <!-- <a href='https://linkedin.com/in/nalamat'><i class="fas fa-file-alt"></i></a> -->
         </div>
-        <div style='margin-top: 3em;'>
+        <div class='construction'>
           Website under construction!
         </div>
       </div>
