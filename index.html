@@ -19,6 +19,7 @@ layout: home
 
     .container {
       display: flex;
+      flex-direction: row;
       width: 100%;
       height: 100%;
       font-family: Calibri, 'Source Sans Pro', Arial;
@@ -26,15 +27,17 @@ layout: home
 
     .sidebar {
       display: flex;
+      flex-direction: column;
       width: 35%;
       height: 100%;
-      justify-content: center;
+      justify-content: space-between;
+      /* justify-content: center; */
       align-items: center;
       color: white;
       background: rgb(100,140,250);
     }
     .sidebar .inner {
-      text-align:center;
+      text-align: center;
     }
     .sidebar .title {
       margin: .5em 0;
@@ -53,8 +56,16 @@ layout: home
     }
     .sidebar .construction {
       margin-top: 4em;
-      margin-bottom: 1em;
+      margin-bottom: 0em;
       font-size: 20px;
+    }
+    .sidebar .bottom {
+      margin: 10px;
+      font-size: 85%;
+      text-align: center;
+    }
+    .sidebar .bottom a {
+      color: rgb(220,220,255);
     }
 
     .content {
@@ -106,12 +117,6 @@ layout: home
       font-style: italic;
       text-decoration: underline;
     }
-    .content .nodecoration {
-      color: inherit;
-      font-weight: inherit;
-      font-style: inherit;
-      text-decoration: inherit;
-    }
     .content .nodecoration:hover {
       text-decoration: underline;
     }
@@ -119,30 +124,38 @@ layout: home
       text-align: justify;
       padding: 0 20px;
     }
-    
+
+    .nodecoration {
+      color: inherit;
+      font-weight: inherit;
+      font-style: inherit;
+      text-decoration: inherit;
+    }
+
     @media (max-width: 750px)
     {
-        .container
-        {
-          display: block;
-        }
-        .sidebar
-        {
-          width: 100%;
-          height: auto;
-        }
-        .sidebar .construction {
-          margin-top: 2em;
-        }
-        .content
-        {
-          width: 100%;
-        }
-        .content .inner
-        {
-          padding: 5% 5%;
-          overflow-y: visible;
-        }
+      .container
+      {
+        flex-direction: column;
+      }
+      .sidebar
+      {
+        width: 100%;
+        height: auto;
+      }
+      .sidebar .construction {
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+      .content
+      {
+        width: 100%;
+      }
+      .content .inner
+      {
+        padding: 3% 5%;
+        overflow-y: visible;
+      }
     }
 
   </style>
@@ -151,6 +164,7 @@ layout: home
 <body>
   <div class='container'>
     <div class='sidebar'>
+      <div class='upper'></div>
       <div class='inner'>
         <div class='title'>
           Nima Alamatsaz
@@ -165,6 +179,11 @@ layout: home
         <div class='construction'>
           Website under construction!
         </div>
+      </div>
+      <div class='bottom'>
+        © 2020 under <a href=https://gnu.org/licenses/gpl-3.0.en.html>GPLv3</a>
+        <br>
+        Powered by <a href='https://pages.github.com'>GitHub Pages</a> and <a href='https://jekyllrb.com'>Jekyll</a>
       </div>
     </div>
 
@@ -270,15 +289,69 @@ layout: home
         </div>
 
         <div class='header'>Publications</div>
-        <p>A Ihlefeld, <b>N Alamatsaz</b>, and RM Shapley. “Population rate-coding predicts correctly that human sound localization depends on sound intensity.” <i>eLife</i>, <i>8</i>, p.e47027, 2019.</p>
-        <p><b>N Alamatsaz</b>, and A Ihlefeld. “Leveraging adaptation to study perceptual weighting of interaural time differences.” <i>International Congress on Acoustics (ICA)</i>, vol. 23, no. 1, pp. 8253-8256, 2019.</p>
-        <p>A Ihlefeld, <b>N Alamatsaz</b>, and RM Shapley. “Circling back on theories of sound localization.” <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 145, no. 3, pp. 1759, 2019.</p>
-        <p><b>N Alamatsaz</b>, and A Ihlefeld. “The role of central processing in modulation masking release.” <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 144, no. 3, pp. 1900, 2018.</p>
-        <p>A Boustani, N Alamatsaz, <b>N Alamatsaz</b>, and A Boustani. “Traffic volume reduction in smart grid networks by a cooperative intelligent interpolation technique.” <i>Consumer Communications & Networking Conference (CCNC)</i>, <i>15th IEEE Annual</i>, pp. 1-7, 2018.</p>
-        <p>N Alamatsaz, A Boustani, <b>N Alamatsaz</b>, and A Boustani. “Towards Efficient Privacy-Preserving Data Aggregation for Advanced Metering Infrastructure,” <i>The International Journal of Computer Networks & Communications (IJCNC)</i>, vol. 9, no. 5, 2017.</p>
-        <p>A Ihlefeld, M Ning, SS Chaubal, and <b>N Alamatsaz</b>. “Neural correlates of modulation masking release: The role of sound deprivation.” <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3894, 2017.</p>
-        <p><b>N Alamatsaz</b>, RM Shapley, and A Ihlefeld. “The effect of sound intensity on lateralization with interaural time differences.” <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3639, 2017.</p>
-        <p><b>N Alamatsaz</b>, S Moradi, and P Moallem. “Towards Improved Safety, Selectivity and Energy Efficiency of Retinal Stimulation,” <i>Iranian Conference on Biomedical Engineering (ICBME)</i>, vol. 21, 2014.</p>
+        <p>
+          <b>Population rate-coding predicts correctly that human sound localization depends on sound intensity</b>
+          <br>
+          A Ihlefeld, <b>N Alamatsaz</b>, and RM Shapley
+          <br>
+          <i>eLife</i>, <i>8</i>, p.e47027, 2019
+        </p>
+        <p>
+          <b>Leveraging adaptation to study perceptual weighting of interaural time differences</b>
+          <br>
+          <b>N Alamatsaz</b>, and A Ihlefeld
+          <br>
+          <i>International Congress on Acoustics (ICA)</i>, vol. 23, no. 1, pp. 8253-8256, 2019
+        </p>
+        <p>
+          <b>Circling back on theories of sound localization</b>
+          <br>
+          A Ihlefeld, <b>N Alamatsaz</b>, and RM Shapley
+          <br>
+          <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 145, no. 3, pp. 1759, 2019
+        </p>
+        <p>
+          <b>The role of central processing in modulation masking release</b>
+          <br>
+          <b>N Alamatsaz</b>, and A Ihlefeld
+          <br>
+          <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 144, no. 3, pp. 1900, 2018
+        </p>
+        <p>
+          <b>Traffic volume reduction in smart grid networks by a cooperative intelligent interpolation technique</b>
+          <br>
+          A Boustani, N Alamatsaz, <b>N Alamatsaz</b>, and A Boustani
+          <br>
+          <i>Consumer Communications & Networking Conference (CCNC)</i>, <i>15th IEEE Annual</i>, pp. 1-7, 2018
+        </p>
+        <p>
+          <b>Towards Efficient Privacy-Preserving Data Aggregation for Advanced Metering Infrastructure</b>
+          <br>
+          N Alamatsaz, A Boustani, <b>N Alamatsaz</b>, and A Boustani
+          <br>
+          <i>The International Journal of Computer Networks & Communications (IJCNC)</i>, vol. 9, no. 5, 2017
+        </p>
+        <p>
+          <b>Neural correlates of modulation masking release: The role of sound deprivation</b>
+          <br>
+          A Ihlefeld, M Ning, SS Chaubal, and <b>N Alamatsaz</b>
+          <br>
+          <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3894, 2017
+        </p>
+        <p>
+          <b>The effect of sound intensity on lateralization with interaural time differences</b>
+          <br>
+          <b>N Alamatsaz</b>, RM Shapley, and A Ihlefeld
+          <br>
+          <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3639, 2017
+        </p>
+        <p>
+          <b>Towards Improved Safety, Selectivity and Energy Efficiency of Retinal Stimulation</b>
+          <br>
+          <b>N Alamatsaz</b>, S Moradi, and P Moallem
+          <br>
+          <i>Iranian Conference on Biomedical Engineering (ICBME)</i>, vol. 21, 2014
+        </p>
       </div>
     </div>
   </div>
