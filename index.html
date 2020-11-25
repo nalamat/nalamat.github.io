@@ -82,7 +82,8 @@ layout: home
       color: rgb(0,0,50);
     }
     .content .header {
-      margin-top: 1em;
+      margin-top: 30px;
+      margin-bottom: 10px;
       padding: .3em 20px;
       /* text-align: center; */
       font-size: 28px;
@@ -92,21 +93,25 @@ layout: home
       /* color: rgb(0,0,100); */
       /* background: rgb(220,220,255); */
       color: rgb(60,60,150);
-      background: rgb(235,235,255);
+      background: rgb(225,225,255);
     }
-    .content .rows {
-      margin: 20px 20px;
+    .content .item {
+      margin: 5px 10px;
+      padding: 5px 10px;
     }
-    .content .rows .cols {
+    .content .item:hover {
+      background: rgb(245,245,255)
+    }
+    .content .item .cols {
       display: flex;
       margin: 3px 0;
       justify-content: space-between;
     }
-    .content .rows .cols .info {
+    .content .item .cols div:last-child {
       /* font-size: 90%; */
       text-align: right;
     }
-    .content .rows .more {
+    .content .item .more {
       margin: 6px 20px;
       color: rgb(0,0,120);
       /* font-size: 90% */
@@ -194,7 +199,7 @@ layout: home
 
         <div class='header'>Education</div>
 
-        <div class='rows'>
+        <div class='item'>
           <div class='cols'>
             <div><b>Ph.D. in Biomedical Engineering</b></div>
             <div class='info'>Sep 2015 - 2021 (Exp)</div>
@@ -210,7 +215,7 @@ layout: home
           </div>
         </div>
 
-        <div class='rows'>
+        <div class='item'>
           <div class='cols'>
             <div><b><a class='nodecoration' href='https://micromasters.mit.edu/ds/'>MicroMasters in Statistics & Data Science</a></b></div>
             <div class='info'>Sep 2019 - 2021 (Exp)</div>
@@ -226,7 +231,7 @@ layout: home
           </div>
         </div>
 
-        <div class='rows'>
+        <div class='item'>
           <div class='cols'>
             <div><b>B.S. in Electrical Engineering</b></div>
             <div class='info'>Sep 2009 - Sep 2013</div>
@@ -244,7 +249,7 @@ layout: home
 
         <div class='header'>Experience</div>
 
-        <div class='rows'>
+        <div class='item'>
           <div class='cols'>
             <div><b>Graduate Research Assistant</b></div>
             <div class='info'>Sep 2015 - Current</div>
@@ -255,7 +260,7 @@ layout: home
           </div>
         </div>
 
-        <div class='rows'>
+        <div class='item'>
           <div class='cols'>
             <div><b>Graduate Research Assistant</b></div>
             <div class='info'>Jan 2016 - Jun 2016</div>
@@ -266,7 +271,7 @@ layout: home
           </div>
         </div>
 
-        <div class='rows'>
+        <div class='item'>
           <div class='cols'>
             <div><b>Research & Development Engineer</b></div>
             <div class='info'>May 2013 - May 2014</div>
@@ -277,7 +282,7 @@ layout: home
           </div>
         </div>
 
-        <div class='rows'>
+        <div class='item'>
           <div class='cols'>
             <div><b>Cofounder & Lead Engineer</b></div>
             <div class='info'>May 2013 - May 2014</div>
@@ -289,69 +294,69 @@ layout: home
         </div>
 
         <div class='header'>Publications</div>
-        <p>
+        <div class='item'>
           <b>Population rate-coding predicts correctly that human sound localization depends on sound intensity</b>
           <br>
           A Ihlefeld, <b>N Alamatsaz</b>, and RM Shapley
           <br>
           <i>eLife</i>, <i>8</i>, p.e47027, 2019
-        </p>
-        <p>
+        </div>
+        <div class='item'>
           <b>Leveraging adaptation to study perceptual weighting of interaural time differences</b>
           <br>
           <b>N Alamatsaz</b>, and A Ihlefeld
           <br>
           <i>International Congress on Acoustics (ICA)</i>, vol. 23, no. 1, pp. 8253-8256, 2019
-        </p>
-        <p>
+        </div>
+        <div class='item'>
           <b>Circling back on theories of sound localization</b>
           <br>
           A Ihlefeld, <b>N Alamatsaz</b>, and RM Shapley
           <br>
           <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 145, no. 3, pp. 1759, 2019
-        </p>
-        <p>
+        </div>
+        <div class='item'>
           <b>The role of central processing in modulation masking release</b>
           <br>
           <b>N Alamatsaz</b>, and A Ihlefeld
           <br>
           <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 144, no. 3, pp. 1900, 2018
-        </p>
-        <p>
+        </div>
+        <div class='item'>
           <b>Traffic volume reduction in smart grid networks by a cooperative intelligent interpolation technique</b>
           <br>
           A Boustani, N Alamatsaz, <b>N Alamatsaz</b>, and A Boustani
           <br>
           <i>Consumer Communications & Networking Conference (CCNC)</i>, <i>15th IEEE Annual</i>, pp. 1-7, 2018
-        </p>
-        <p>
+        </div>
+        <div class='item'>
           <b>Towards Efficient Privacy-Preserving Data Aggregation for Advanced Metering Infrastructure</b>
           <br>
           N Alamatsaz, A Boustani, <b>N Alamatsaz</b>, and A Boustani
           <br>
           <i>The International Journal of Computer Networks & Communications (IJCNC)</i>, vol. 9, no. 5, 2017
-        </p>
-        <p>
+        </div>
+        <div class='item'>
           <b>Neural correlates of modulation masking release: The role of sound deprivation</b>
           <br>
           A Ihlefeld, M Ning, SS Chaubal, and <b>N Alamatsaz</b>
           <br>
           <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3894, 2017
-        </p>
-        <p>
+        </div>
+        <div class='item'>
           <b>The effect of sound intensity on lateralization with interaural time differences</b>
           <br>
           <b>N Alamatsaz</b>, RM Shapley, and A Ihlefeld
           <br>
           <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3639, 2017
-        </p>
-        <p>
+        </div>
+        <div class='item'>
           <b>Towards Improved Safety, Selectivity and Energy Efficiency of Retinal Stimulation</b>
           <br>
           <b>N Alamatsaz</b>, S Moradi, and P Moallem
           <br>
           <i>Iranian Conference on Biomedical Engineering (ICBME)</i>, vol. 21, 2014
-        </p>
+        </div>
       </div>
     </div>
   </div>
