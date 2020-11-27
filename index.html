@@ -2,22 +2,32 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 --- -->
+<!doctype html>
 <html lang=en>
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Calibri" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <style>
     html, body {
       margin: 0 0;
+      width: 100%;
+      height: 100%;
       -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+      font-size: 1rem;
     }
 
     .container {
+      padding: 0 0;
       display: flex;
       flex-direction: row;
       width: 100%;
@@ -28,10 +38,9 @@ layout: home
     .sidebar {
       display: flex;
       flex-direction: column;
-      width: 35%;
+      width: 30%;
       height: 100%;
       justify-content: space-between;
-      /* justify-content: center; */
       align-items: center;
       color: white;
       background: rgb(100,140,250);
@@ -41,27 +50,33 @@ layout: home
     }
     .sidebar .title {
       margin: .5em 0;
-      font-size: 44px;
+      font-size: 3rem;
       font-weight: bold;
     }
     .sidebar .favicons {
-      text-align: center;
-      font-size: 28px;
-      /* text-shadow: 2px 2px rgba(0,0,0,.1); */
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* text-align: center; */
+      font-size: 1.75rem;
+      text-shadow: .1em .1em rgba(0,0,0,.1);
     }
     .sidebar .favicons a {
       color: white;
       margin: .3em;
-      text-decoration: inherit;
+      text-decoration: none;
+      transition: .3s;
+    }
+    .sidebar .favicons a:hover {
+      color: rgb(220,220,255);
     }
     .sidebar .construction {
-      margin-top: 4em;
-      margin-bottom: 0em;
-      font-size: 20px;
+      margin-top: 4rem;
+      font-size: 1.25rem;
     }
     .sidebar .bottom {
-      margin: 10px;
-      font-size: 85%;
+      margin: .5rem;
+      font-size: .75rem;
       text-align: center;
     }
     .sidebar .bottom a {
@@ -70,7 +85,7 @@ layout: home
 
     .content {
       display: flex;
-      width: 100%;
+      width: 70%;
       height: 100%;
       justify-content: center;
       /* background: rgb(230,230,250); */
@@ -82,11 +97,11 @@ layout: home
       color: rgb(0,0,50);
     }
     .content .header {
-      margin-top: 30px;
-      margin-bottom: 10px;
-      padding: .3em 20px;
+      margin-top: 1.5rem;
+      margin-bottom: .5rem;
+      padding: .5rem 1rem;
       /* text-align: center; */
-      font-size: 28px;
+      font-size: 1.75rem;
       font-weight: bold;
       color: white;
       /* background: rgb(100,140,230); */
@@ -96,25 +111,28 @@ layout: home
       background: rgb(225,225,255);
     }
     .content .item {
-      margin: 5px 10px;
-      padding: 5px 10px;
+      margin: .3rem .5rem;
+      padding: .5rem .5rem;
+      transition: .3s;
     }
     .content .item:hover {
-      background: rgb(245,245,255)
+      background: rgb(240,240,255);
     }
     .content .item .cols {
       display: flex;
-      margin: 3px 0;
+      /* margin: .3em 0; */
       justify-content: space-between;
     }
+    .content .item .cols + .cols {
+      margin-top: .3rem;
+    }
     .content .item .cols div:last-child {
-      /* font-size: 90%; */
       text-align: right;
     }
     .content .item .more {
-      margin: 6px 20px;
+      margin: 0 1rem;
+      margin-top: .3rem;
       color: rgb(0,0,120);
-      /* font-size: 90% */
     }
     .content .emphasis {
       color: inherit;
@@ -122,12 +140,9 @@ layout: home
       font-style: italic;
       text-decoration: underline;
     }
-    .content .nodecoration:hover {
-      text-decoration: underline;
-    }
     .content p {
       text-align: justify;
-      padding: 0 20px;
+      padding: 0 1rem;
     }
 
     .nodecoration {
@@ -136,12 +151,16 @@ layout: home
       font-style: inherit;
       text-decoration: inherit;
     }
+    .nodecoration:hover {
+      text-decoration: underline;
+    }
 
     @media (max-width: 750px)
     {
       .container
       {
         flex-direction: column;
+        height: auto;
       }
       .sidebar
       {
@@ -155,6 +174,7 @@ layout: home
       .content
       {
         width: 100%;
+        height: auto;
       }
       .content .inner
       {
@@ -174,17 +194,21 @@ layout: home
         <div class='title'>
           Nima Alamatsaz
         </div>
+
         <div class='favicons'>
           <a href='mailto:'><i class="fas fa-envelope"></i></a>
-          <a href='https://twitter.com/nialamat'><i class="fab fa-twitter"></i></a>
-          <a href='https://github.com/nalamat'><i class="fab fa-github"></i></a>
-          <a href='https://linkedin.com/in/nalamat'><i class="fab fa-linkedin"></i></a>
-          <!-- <a href='https://linkedin.com/in/nalamat'><i class="fas fa-file-alt"></i></a> -->
+          <a href='https://twitter.com/nialamat'><i class='fab fa-twitter'></i></a>
+          <a href='https://github.com/nalamat'><i class='fab fa-github'></i></a>
+          <a href='https://linkedin.com/in/nalamat'><i class='fab fa-linkedin'></i></a>
+          <a href='https://scholar.google.com/citations?user=zjHQQEwAAAAJ&hl=en'><i class='ai ai-google-scholar big-icon'></i></a>
+          <!-- <a href='https://linkedin.com/in/nalamat'><i class='fas fa-file-alt'></i></a> -->
         </div>
+
         <div class='construction'>
           Website under construction!
         </div>
       </div>
+
       <div class='bottom'>
         © 2020 under <a href=https://gnu.org/licenses/gpl-3.0.en.html>GPLv3</a>
         <br>
@@ -199,6 +223,7 @@ layout: home
 
         <div class='header'>Education</div>
 
+        <!-- <div class='item'  href='#education-phd' data-toggle='collapse'> -->
         <div class='item'>
           <div class='cols'>
             <div><b>Ph.D. in Biomedical Engineering</b></div>
@@ -208,10 +233,16 @@ layout: home
             <div><a class='nodecoration' href='https://njit.edu'>New Jersey Institute of Technology</a></div>
             <div class='info'>Newark, NJ</div>
           </div>
+          <!-- <a href='#education-phd' data-toggle='collapse'>More</a> -->
+
+
           <div class='more'>
+          <!-- <div id='education-phd' class='collapse'> -->
+          <!-- <div id='education-phd' class='more collapse'> -->
             Received the <a class='emphasis' href='https://engineering.njit.edu/students-awards'>2020 NCE Outstanding Graduate Student Award</a>
             <br>
             Computational neuroscience, data science, signal processing of brain waves, statistical modeling
+          <!-- </div> -->
           </div>
         </div>
 
