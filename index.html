@@ -74,18 +74,19 @@ layout: home
       display: flex;
       flex-direction: row;
       justify-content: center;
-      /* text-align: center; */
-      font-size: 1.75rem;
-      text-shadow: .1em .1em rgba(0,0,0,.1);
+      align-items: center;
     }
     .sidebar .favicons a {
+      margin: .35em;
       color: white;
-      margin: .3em;
+      font-size: 1.75rem;
+      text-shadow: .1em .1em rgba(0,0,0,.1);
       text-decoration: none;
-      transition: color .3s;
+      transition: color .3s, transform .3s;
     }
     .sidebar .favicons a:hover {
       color: rgb(220,220,255);
+      transform: scale(1.5);
     }
     .sidebar .construction {
       margin-top: 4rem;
