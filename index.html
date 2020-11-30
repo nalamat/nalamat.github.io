@@ -3,18 +3,18 @@
 layout: home
 --- -->
 <!doctype html>
-<html lang=en>
+<html lang='en'>
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css' integrity='sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Calibri'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro'>
+  <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx' crossorigin='anonymous'></script>
 
   <script type='text/javascript'>
     $(document).on('click', '.item', function() {
@@ -65,18 +65,18 @@ layout: home
     .sidebar .inner {
       text-align: center;
     }
-    .sidebar h1 {
+    .sidebar h1 { /* for website title, compatibile with screen readers*/
       margin: .5em 0;
       font-size: 3rem;
       font-weight: bold;
     }
-    .sidebar .favicons {
+    .favicons {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
     }
-    .sidebar .favicons a {
+    .favicons a {
       margin: .35em;
       color: white;
       font-size: 1.75rem;
@@ -84,20 +84,20 @@ layout: home
       text-decoration: none;
       transition: color .3s, transform .3s;
     }
-    .sidebar .favicons a:hover {
+    .favicons a:hover {
       color: rgb(220,220,255);
       transform: scale(1.5);
     }
-    .sidebar .construction {
+    .construction {
       margin-top: 4rem;
       font-size: 1.25rem;
     }
-    .sidebar .bottom {
+    .copyright {
       margin: .5rem;
       font-size: .75rem;
       text-align: center;
     }
-    .sidebar .bottom a {
+    .copyright a {
       color: rgb(220,220,255);
     }
 
@@ -114,7 +114,7 @@ layout: home
       overflow-y: scroll;
       color: rgb(0,0,50);
     }
-    .content h2 {
+    h2 {
       margin-top: 1.5rem;
       margin-bottom: .5rem;
       padding: .5rem 1rem;
@@ -128,45 +128,47 @@ layout: home
       color: rgb(60,60,150);
       background: rgb(225,225,255);
     }
-    .content p {
-      padding: 0 1rem;
+    p {
       text-align: justify;
     }
-    .content .item {
-      position: relative;
-      padding: .5rem 1rem;
+    .section {
+      padding: 0 1rem;
+    }
+    .item {
+      margin: 0 -.5rem;
+      padding: .5rem .5rem;
       transition: background .3s;
     }
-    .content .item:hover {
+    .item:hover {
       background: rgb(240,240,255);
     }
-    .content .item .cols {
+    .item .cols {
       display: flex;
       /* margin: .3em 0; */
       justify-content: space-between;
     }
-    .content .item .cols + .cols {
+    .item .cols + .cols {
       margin-top: .3rem;
     }
-    .content .item .cols div:last-child {
+    .item .cols div:last-child {
       text-align: right;
     }
-    .content .item .more {
+    .item .more {
       overflow: hidden;
       margin: 0 1rem;
       max-height: 0;    /* animated through javascript */
       color: rgb(0,0,120);
       transition: all .3s ease-in;
     }
-    .content .item .more.expand {
+    .item .more.expand {
       margin-top: .3rem;
       padding-top: 0;
       transition: all .3s ease-out;
     }
-    .content .item:hover .more.expand {
+    .item:hover .more.expand {
       padding-top: -2rem;
     }
-    .content .item .arrow {
+    .item .arrow {
       /* margin: 0 1rem; */
       /* margin: 0 -.5rem; */
       margin-top: -.25rem;
@@ -184,22 +186,21 @@ layout: home
       mask-repeat: no-repeat;
       transition: opacity .3s, transform .3s ease-in;
     }
-    .content .item:hover .arrow {
+    .item:hover .arrow {
       opacity: 1;
     }
-    .content .item .arrow.expand {
+    .item .arrow.expand {
       transform: rotate(-180deg);
       opacity: .2;
       transition: opacity .3s, transform .3s ease-out;
     }
-    .content .item:hover .arrow.expand {
+    .item:hover .arrow.expand {
       opacity: 1;
     }
-    .content .item p {
+    .item p {
       margin: 0;
-      padding: 0;
     }
-    .content .emphasis {
+    .emphasis {
       color: inherit;
       font-weight: normal;
       font-style: italic;
@@ -216,8 +217,7 @@ layout: home
       text-decoration: underline;
     }
 
-    @media (max-width: 750px)
-    {
+    @media (max-width: 750px) {
       .container
       {
         flex-direction: column;
@@ -229,7 +229,7 @@ layout: home
         width: 100%;
         height: auto;
       }
-      .sidebar .construction {
+      .construction {
         margin-top: 2em;
         margin-bottom: 2em;
       }
@@ -244,10 +244,11 @@ layout: home
         padding: 5% 5%;
         overflow-y: visible;
       }
-      .content .item .arrow {
+
+      .item .arrow {
         opacity: .2;
       }
-      .content .item .arrow.expand {
+      .item .arrow.expand {
         opacity: .2;
       }
     }
@@ -265,7 +266,7 @@ layout: home
         </h1>
 
         <div class='favicons'>
-          <a href='mailto:'><i class="fas fa-envelope"></i></a>
+          <a href='mailto:'><i class='fas fa-envelope'></i></a>
           <a href='https://twitter.com/nialamat'><i class='fab fa-twitter'></i></a>
           <a href='https://github.com/nalamat'><i class='fab fa-github'></i></a>
           <a href='https://linkedin.com/in/nalamat'><i class='fab fa-linkedin'></i></a>
@@ -278,230 +279,257 @@ layout: home
         </div>
       </div>
 
-      <div class='bottom'>
+      <div class='copyright'>
         © 2020 under <a href=https://gnu.org/licenses/gpl-3.0.en.html>GPLv3</a>
         <br>
         Powered by <a href='https://pages.github.com'>GitHub Pages</a> and <a href='https://jekyllrb.com'>Jekyll</a>
       </div>
     </div>
 
+
     <div class='content'>
       <div class='inner'>
-        <p>I am a versatile self-starter with years of experience in programming with Python, C++, R; a strong background in machine learning, statistical modeling, signal processing; and engineering skills such as embedded systems and circuit design.</p>
-        <p>My role as a graduate student in neuroscience has evolved around computational modeling of hearing phenomena through analyzing large amounts of brain signals by parallelized implementation of machine learning methods (such as K-SVD), and statistical modeling of human sound localization data using nonlinear mixed-effects model (NLME). Meanwhile, I enjoyed assisting Prof. Antje Ihlefeld in setting up an entire animal research lab (from designing hardware to writing software) and mentoring undergraduate students towards obtaining research grants.</p>
+        <div class='section'>
+          <p>I am a versatile self-starter with years of experience in programming with Python, C++, R; a strong background in machine learning, statistical modeling, signal processing; and engineering skills such as embedded systems and circuit design.</p>
+          <p>My role as a graduate student in neuroscience has evolved around computational modeling of hearing phenomena through analyzing large amounts of brain signals by parallelized implementation of machine learning methods (such as K-SVD), and statistical modeling of human sound localization data using nonlinear mixed-effects model (NLME). Meanwhile, I enjoyed assisting Prof. Antje Ihlefeld in setting up an entire animal research lab (from designing hardware to writing software) and mentoring undergraduate students towards obtaining research grants.</p>
+        </div>
+
 
         <h2>Education</h2>
 
-        <div class='item'>
-          <div class='cols'>
-            <div><b>Ph.D. in Biomedical Engineering</b></div>
-            <div class='info'>Sep 2015 - 2021 (Exp)</div>
-          </div>
-          <div class='cols'>
-            <div><a class='nodecoration' href='https://njit.edu'>New Jersey Institute of Technology</a></div>
-            <div class='info'>Newark, NJ</div>
+        <div class='section'>
+          <div class='item'>
+            <div class='cols'>
+              <div><b>Ph.D. in Biomedical Engineering</b></div>
+              <div class='info'>Sep 2015 - 2021 (Exp)</div>
+            </div>
+            <div class='cols'>
+              <div><a class='nodecoration' href='https://njit.edu'>New Jersey Institute of Technology</a></div>
+              <div class='info'>Newark, NJ</div>
+            </div>
+
+            <div class='more'>
+              Received the <a class='emphasis' href='https://engineering.njit.edu/students-awards'>2020 NCE Outstanding Graduate Student Award</a>
+              <br>
+              Focus: Computational neuroscience, data science, signal processing of brain waves, statistical modeling
+              <br>
+              Dissertation: “Towards Understanding the Role of Central Processing in Release from Masking”
+              <br>
+              Advisor: Prof. Antje Ihlefeld
+            </div>
+            <div class='arrow'></div>
           </div>
 
-          <div class='more'>
-            Received the <a class='emphasis' href='https://engineering.njit.edu/students-awards'>2020 NCE Outstanding Graduate Student Award</a>
-            <br>
-            Focus: Computational neuroscience, data science, signal processing of brain waves, statistical modeling
-            <br>
-            Dissertation: “Towards Understanding the Role of Central Processing in Release from Masking”
-            <br>
-            Advisor: Prof. Antje Ihlefeld
+          <div class='item' href='#'>
+            <div class='cols'>
+              <div><b><a class='nodecoration' href='https://micromasters.mit.edu/ds/'>MicroMasters in Statistics & Data Science</a></b></div>
+              <div class='info'>Sep 2019 - 2021 (Exp)</div>
+            </div>
+            <div class='cols'>
+              <div><a class='nodecoration' href='https://mit.edu'>Massachusetts Institute of Technology</a></div>
+              <div class='info'>Online</div>
+            </div>
+
+            <div class='more'>
+              Program offered by MIT on the edX platform
+              <br>
+              Focus: Probability, data analysis, statistics and machine learning
+            </div>
+            <div class='arrow'></div>
           </div>
-          <div class='arrow'></div>
+
+          <div class='item'>
+            <div class='cols'>
+              <div><b>B.S. in Electrical Engineering</b></div>
+              <div class='info'>Sep 2009 - Sep 2013</div>
+            </div>
+            <div class='cols'>
+              <div><a class='nodecoration' href='https://ui.ac.ir/EN'>University of Isfahan</a></div>
+              <div class='info'>Isfahan, Iran</div>
+            </div>
+
+            <div class='more'>
+              <span class='emphasis'>Summa cum laude:</span> Ranked 1st among all Electrical Engineering undergraduate students
+              <br>
+              Microchip design, multi-objective optimization, genetic algorithm, parallelized simulation
+              <br>
+              Thesis: “Design of a Safe Low-Power Neural Micro-Stimulator with Gaussian Waveform”
+            </div>
+            <div class='arrow'></div>
+          </div>
         </div>
 
-        <div class='item' href='#'>
-          <div class='cols'>
-            <div><b><a class='nodecoration' href='https://micromasters.mit.edu/ds/'>MicroMasters in Statistics & Data Science</a></b></div>
-            <div class='info'>Sep 2019 - 2021 (Exp)</div>
-          </div>
-          <div class='cols'>
-            <div><a class='nodecoration' href='https://mit.edu'>Massachusetts Institute of Technology</a></div>
-            <div class='info'>Online</div>
-          </div>
-
-          <div class='more'>
-            Program offered by MIT on the edX platform
-            <br>
-            Focus: Probability, data analysis, statistics and machine learning
-          </div>
-          <div class='arrow'></div>
-        </div>
-
-        <div class='item'>
-          <div class='cols'>
-            <div><b>B.S. in Electrical Engineering</b></div>
-            <div class='info'>Sep 2009 - Sep 2013</div>
-          </div>
-          <div class='cols'>
-            <div><a class='nodecoration' href='https://ui.ac.ir/EN'>University of Isfahan</a></div>
-            <div class='info'>Isfahan, Iran</div>
-          </div>
-
-          <div class='more'>
-            <span class='emphasis'>Summa cum laude:</span> Ranked 1st among all Electrical Engineering undergraduate students
-            <br>
-            Microchip design, multi-objective optimization, genetic algorithm, parallelized simulation
-            <br>
-            Thesis: “Design of a Safe Low-Power Neural Micro-Stimulator with Gaussian Waveform”
-          </div>
-          <div class='arrow'></div>
-        </div>
 
         <h2>Experience</h2>
 
-        <div class='item'>
-          <div class='cols'>
-            <div><b>Graduate Research Assistant</b></div>
-            <div class='info'>Sep 2015 - Current</div>
+        <div class='section'>
+          <div class='item'>
+            <div class='cols'>
+              <div><b>Graduate Research Assistant</b></div>
+              <div class='info'>Sep 2015 - Current</div>
+            </div>
+            <div class='cols'>
+              <div><a class='nodecoration' href='http://ihlefeldlab.com'>NESH Laboratory</a>, New Jersey Institute of Technology</div>
+              <div class='info'>Newark, NJ</div>
+            </div>
           </div>
-          <div class='cols'>
-            <div><a class='nodecoration' href='http://ihlefeldlab.com'>NESH Laboratory</a>, New Jersey Institute of Technology</div>
-            <div class='info'>Newark, NJ</div>
+
+          <div class='item'>
+            <div class='cols'>
+              <div><b>Graduate Research Assistant</b></div>
+              <div class='info'>Jan 2016 - Jun 2016</div>
+            </div>
+            <div class='cols'>
+              <div><a class='nodecoration' href='https://sites.rutgers.edu/pare-lab/'>Laboratory of Denis Paré</a>, Rutgers University</div>
+              <div class='info'>Newark, NJ</div>
+            </div>
+          </div>
+
+          <div class='item'>
+            <div class='cols'>
+              <div><b>Research & Development Engineer</b></div>
+              <div class='info'>May 2013 - May 2014</div>
+            </div>
+            <div class='cols'>
+              <div><a class='nodecoration' href='https://novinmed.com/?lang=en'>Novin Medical Engineering Co.</a></div>
+              <div class='info'>Isfahan, Iran</div>
+            </div>
+          </div>
+
+          <div class='item'>
+            <div class='cols'>
+              <div><b>Cofounder & Lead Engineer</b></div>
+              <div class='info'>Jul 2012 - March 2014</div>
+            </div>
+            <div class='cols'>
+              <div>Mahoor Engineering Co. (Startup)</div>
+              <div class='info'>Isfahan Sci. & Tech. Town, Iran</div>
+            </div>
           </div>
         </div>
 
-        <div class='item'>
-          <div class='cols'>
-            <div><b>Graduate Research Assistant</b></div>
-            <div class='info'>Jan 2016 - Jun 2016</div>
-          </div>
-          <div class='cols'>
-            <div><a class='nodecoration' href='https://sites.rutgers.edu/pare-lab/'>Laboratory of Denis Paré</a>, Rutgers University</div>
-            <div class='info'>Newark, NJ</div>
           </div>
         </div>
 
-        <div class='item'>
-          <div class='cols'>
-            <div><b>Research & Development Engineer</b></div>
-            <div class='info'>May 2013 - May 2014</div>
-          </div>
-          <div class='cols'>
-            <div><a class='nodecoration' href='https://novinmed.com/?lang=en'>Novin Medical Engineering Co.</a></div>
-            <div class='info'>Isfahan, Iran</div>
-          </div>
-        </div>
-
-        <div class='item'>
-          <div class='cols'>
-            <div><b>Cofounder & Lead Engineer</b></div>
-            <div class='info'>May 2013 - May 2014</div>
-          </div>
-          <div class='cols'>
-            <div>Mahoor Engineering Co. (Startup)</div>
-            <div class='info'>Isfahan Sci. & Tech. Town, Iran</div>
-          </div>
-        </div>
 
         <h2>Publications</h2>
 
-        <div class='item'>
-          <b>Population rate-coding predicts correctly that human sound localization depends on sound intensity</b>
-          <br>
-          A Ihlefeld, <b>N Alamatsaz</b>, and RM Shapley
-          <br>
-          <i>eLife</i>, <i>8</i>, p.e47027, 2019
-          <div class='more'><p>
-            Human sound localization is an important computation performed by the brain. Models of sound localization commonly assume that sound lateralization from interaural time differences is level invariant. Here we observe that two prevalent theories of sound localization make opposing predictions. The labelled-line model encodes location through tuned representations of spatial location and predicts that perceived direction is level invariant. In contrast, the hemispheric-difference model encodes location through spike-rate and predicts that perceived direction becomes medially biased at low sound levels. Here, behavioral experiments find that softer sounds are perceived closer to midline than louder sounds, favoring rate-coding models of human sound localization. Analogously, visual depth perception, which is based on interocular disparity, depends on the contrast of the target. The similar results in hearing and vision suggest that the brain may use a canonical computation of location: encoding perceived location through population spike rate relative to baseline.
-          </p></div>
-          <div class='arrow'></div>
-        </div>
+        <div class='section'>
+          <div class='item'>
+            <b>Population rate-coding predicts correctly that human sound localization depends on sound intensity</b>
+            <br>
+            A Ihlefeld, <b>N Alamatsaz</b>, and RM Shapley
+            <br>
+            <i>eLife</i>, <i>8</i>, p.e47027, 2019
+            <div class='more'><p>
+              Human sound localization is an important computation performed by the brain. Models of sound localization commonly assume that sound lateralization from interaural time differences is level invariant. Here we observe that two prevalent theories of sound localization make opposing predictions. The labelled-line model encodes location through tuned representations of spatial location and predicts that perceived direction is level invariant. In contrast, the hemispheric-difference model encodes location through spike-rate and predicts that perceived direction becomes medially biased at low sound levels. Here, behavioral experiments find that softer sounds are perceived closer to midline than louder sounds, favoring rate-coding models of human sound localization. Analogously, visual depth perception, which is based on interocular disparity, depends on the contrast of the target. The similar results in hearing and vision suggest that the brain may use a canonical computation of location: encoding perceived location through population spike rate relative to baseline.
+            </p></div>
+            <div class='arrow'></div>
+          </div>
 
-        <div class='item'>
-          <b>Leveraging adaptation to study perceptual weighting of interaural time differences</b>
-          <br>
-          <b>N Alamatsaz</b>, and A Ihlefeld
-          <br>
-          <i>International Congress on Acoustics (ICA)</i>, vol. 23, no. 1, pp. 8253-8256, 2019
-          <div class='more'><p>
-            An important question in auditory cognition is how we perceive the location of an object in space. Converging evidence from animal models and humans suggests that when judging sound direction, the central nervous system weighs the anticipated reliability of binaural cues. Here, we used short-term adaptation to bias normal-hearing listeners towards source direction favoring either the left or the right frontal quadrant. Listeners rated perceived laterality of tokens of band-pass filtered noise (300 Hz-1200 Hz) with interaural time differences that were randomly selected from a uniform distribution spanning either -375 to 0 µs or 0 to 375 µs. Using non-linear mixed effects modeling of behavioral laterality reports, we tested how exposure to source quadrant affects how listeners weigh the reliability of interaural time differences. The cue reliability hypothesis predicts that perceived direction should be skewed, such that unreliable frontal source angles are more affected by short-term adaptation than the more reliable lateral source angles. Alternatively, short-term adaptation may affect all source angles equally, predicting an overall shift in perceived direction. Results show that frontal angles are more strongly affected by short-term adaptation than lateral angles, supporting the cue reliability hypothesis.
-          </p></div>
-          <div class='arrow'></div>
-        </div>
+          <div class='item'>
+            <b>Leveraging adaptation to study perceptual weighting of interaural time differences</b>
+            <br>
+            <b>N Alamatsaz</b>, and A Ihlefeld
+            <br>
+            <i>International Congress on Acoustics (ICA)</i>, vol. 23, no. 1, pp. 8253-8256, 2019
+            <div class='more'><p>
+              An important question in auditory cognition is how we perceive the location of an object in space. Converging evidence from animal models and humans suggests that when judging sound direction, the central nervous system weighs the anticipated reliability of binaural cues. Here, we used short-term adaptation to bias normal-hearing listeners towards source direction favoring either the left or the right frontal quadrant. Listeners rated perceived laterality of tokens of band-pass filtered noise (300 Hz-1200 Hz) with interaural time differences that were randomly selected from a uniform distribution spanning either -375 to 0 µs or 0 to 375 µs. Using non-linear mixed effects modeling of behavioral laterality reports, we tested how exposure to source quadrant affects how listeners weigh the reliability of interaural time differences. The cue reliability hypothesis predicts that perceived direction should be skewed, such that unreliable frontal source angles are more affected by short-term adaptation than the more reliable lateral source angles. Alternatively, short-term adaptation may affect all source angles equally, predicting an overall shift in perceived direction. Results show that frontal angles are more strongly affected by short-term adaptation than lateral angles, supporting the cue reliability hypothesis.
+            </p></div>
+            <div class='arrow'></div>
+          </div>
 
-        <div class='item'>
-          <b>Circling back on theories of sound localization</b>
-          <br>
-          A Ihlefeld, <b>N Alamatsaz</b>, and RM Shapley
-          <br>
-          <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 145, no. 3, pp. 1759, 2019
-          <div class='more'><p>
-            An important question of human perception is how we localize target objects in space. Through our eyes and skin, activation patterns on the sensory epithelium suffice to cue us about a target’s location. However, for our ears, the brain has to compute where a sound source is located. One important cue for computing sound direction is the time difference in arrival of acoustic energy reaching each ear, the interaural time difference (ITD). With behavioral experiments on sound lateralization as a function of sound intensity, we tested how the computation of sound location with ITDs is done. We tested twelve naïve normal-hearing listeners (ages 18–27, five females). Stimuli consisted of low-frequency noise tokens that were bandlimited from 300 to 122 Hz, from 5 to 25 dB sensation level. Without response feedback, listeners were initially trained to reliably judge the direction of a sound source and then tested on where they heard the sound. We found that softer sounds tend to be localized closer to midline as compared to louder sound. This finding raises doubt on one major theory of sound localization, the labeled-line theory, and supports another main contender, population rate based coding.
-          </p></div>
-          <div class='arrow'></div>
-        </div>
+          <div class='item'>
+            <b>Circling back on theories of sound localization</b>
+            <br>
+            A Ihlefeld, <b>N Alamatsaz</b>, and RM Shapley
+            <br>
+            <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 145, no. 3, pp. 1759, 2019
+            <div class='more'>
+              <p>
+                An important question of human perception is how we localize target objects in space. Through our eyes and skin, activation patterns on the sensory epithelium suffice to cue us about a target’s location. However, for our ears, the brain has to compute where a sound source is located. One important cue for computing sound direction is the time difference in arrival of acoustic energy reaching each ear, the interaural time difference (ITD). With behavioral experiments on sound lateralization as a function of sound intensity, we tested how the computation of sound location with ITDs is done. We tested twelve naïve normal-hearing listeners (ages 18–27, five females). Stimuli consisted of low-frequency noise tokens that were bandlimited from 300 to 122 Hz, from 5 to 25 dB sensation level. Without response feedback, listeners were initially trained to reliably judge the direction of a sound source and then tested on where they heard the sound. We found that softer sounds tend to be localized closer to midline as compared to louder sound. This finding raises doubt on one major theory of sound localization, the labeled-line theory, and supports another main contender, population rate based coding.
+              </p>
+            </div>
+            <div class='arrow'></div>
+          </div>
 
-        <div class='item'>
-          <b>The role of central processing in modulation masking release</b>
-          <br>
-          <b>N Alamatsaz</b>, and A Ihlefeld
-          <br>
-          <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 144, no. 3, pp. 1900, 2018
-          <div class='more'><p>
-            When background sound is present, hearing impaired (HI) individuals and cochlear-implant (CI) listeners typically are worse at hearing out target sound as compared to normal-hearing (NH) listeners. This perceptual deficit occurs both when the background consists of noise that fluctuates over time (“modulated”) and for stationary background noise (“unmodulated”). In addition, the difference in thresholds between tone detection in modulated and unmodulated noise, referred to as modulation masking release (MMR), is much reduced or absent in HI and CI as compared to NH. Both peripheral and central processing mechanisms contribute to MMR. We previously showed that central MMR is reduced in human CI listeners, and that sound deprivation reduces central MMR in Mongolian gerbils. Here, we began to explore the neurobiological basis of central MMR. NH gerbils were trained to hear out target tones (1 kHz) in modulated (10-Hz rectangularly gated) versus unmodulated bandlimited background noise, and chronically implanted with recording electrodes in core auditory cortex. Neural discharge was analyzed as a function of the broadband energy ratio between target and background sound to determine how different types of background sound affect neural information transmission in awake behaving gerbil. Preliminary results will be discussed in the context of how hearing loss may affect central MMR.
-          </p></div>
-          <div class='arrow'></div>
-        </div>
+          <div class='item'>
+            <b>The role of central processing in modulation masking release</b>
+            <br>
+            <b>N Alamatsaz</b>, and A Ihlefeld
+            <br>
+            <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 144, no. 3, pp. 1900, 2018
+            <div class='more'>
+              <p>
+                When background sound is present, hearing impaired (HI) individuals and cochlear-implant (CI) listeners typically are worse at hearing out target sound as compared to normal-hearing (NH) listeners. This perceptual deficit occurs both when the background consists of noise that fluctuates over time (“modulated”) and for stationary background noise (“unmodulated”). In addition, the difference in thresholds between tone detection in modulated and unmodulated noise, referred to as modulation masking release (MMR), is much reduced or absent in HI and CI as compared to NH. Both peripheral and central processing mechanisms contribute to MMR. We previously showed that central MMR is reduced in human CI listeners, and that sound deprivation reduces central MMR in Mongolian gerbils. Here, we began to explore the neurobiological basis of central MMR. NH gerbils were trained to hear out target tones (1 kHz) in modulated (10-Hz rectangularly gated) versus unmodulated bandlimited background noise, and chronically implanted with recording electrodes in core auditory cortex. Neural discharge was analyzed as a function of the broadband energy ratio between target and background sound to determine how different types of background sound affect neural information transmission in awake behaving gerbil. Preliminary results will be discussed in the context of how hearing loss may affect central MMR.
+              </p>
+            </div>
+            <div class='arrow'></div>
+          </div>
 
-        <div class='item'>
-          <b>Traffic volume reduction in smart grid networks by a cooperative intelligent interpolation technique</b>
-          <br>
-          A Boustani, N Alamatsaz, <b>N Alamatsaz</b>, and A Boustani
-          <br>
-          <i>Consumer Communications & Networking Conference (CCNC)</i>, <i>15th IEEE Annual</i>, pp. 1-7, 2018
-          <div class='more'><p>
-            Leveraging a modern communication network, the power industry is moving towards the next generation power grid, the smart grid. This new communication-based power grid is expected to change the way electricity is generated, distributed, and transmitted to the consumers by enhancing the reliability, efficiency, sustainability, and economics of the grid. However, due to the high volume, high granularity, and frequency of the data generated by smart electricity meters, careful planning and management of this communication network is essential. Given the potential large-scale future deployment of the smart grid, power companies face possible network capacity limitations. Therefore, efficient utilization of the Smart Grid Network (SGN) should be studied. In this paper, we introduce a smart interpolation scheme for reducing the volume of information transmitted in a smart grid backhaul network without any precision reduction or loss of benefit. Utilizing concepts of Spread Spectrum Communications, smart nodes at utility control centers are able to intelligently infer omitted data and interpolate the original message. By means of extensive evaluations, we show that our scheme significantly improves network utilization and decreases volume of the traffic in a smart grid network.
-          </p></div>
-          <div class='arrow'></div>
-        </div>
+          <div class='item'>
+            <b>Traffic volume reduction in smart grid networks by a cooperative intelligent interpolation technique</b>
+            <br>
+            A Boustani, N Alamatsaz, <b>N Alamatsaz</b>, and A Boustani
+            <br>
+            <i>Consumer Communications & Networking Conference (CCNC)</i>, <i>15th IEEE Annual</i>, pp. 1-7, 2018
+            <div class='more'>
+              <p>
+                Leveraging a modern communication network, the power industry is moving towards the next generation power grid, the smart grid. This new communication-based power grid is expected to change the way electricity is generated, distributed, and transmitted to the consumers by enhancing the reliability, efficiency, sustainability, and economics of the grid. However, due to the high volume, high granularity, and frequency of the data generated by smart electricity meters, careful planning and management of this communication network is essential. Given the potential large-scale future deployment of the smart grid, power companies face possible network capacity limitations. Therefore, efficient utilization of the Smart Grid Network (SGN) should be studied. In this paper, we introduce a smart interpolation scheme for reducing the volume of information transmitted in a smart grid backhaul network without any precision reduction or loss of benefit. Utilizing concepts of Spread Spectrum Communications, smart nodes at utility control centers are able to intelligently infer omitted data and interpolate the original message. By means of extensive evaluations, we show that our scheme significantly improves network utilization and decreases volume of the traffic in a smart grid network.
+              </p>
+            </div>
+            <div class='arrow'></div>
+          </div>
 
-        <div class='item'>
-          <b>Towards Efficient Privacy-Preserving Data Aggregation for Advanced Metering Infrastructure</b>
-          <br>
-          N Alamatsaz, A Boustani, <b>N Alamatsaz</b>, and A Boustani
-          <br>
-          <i>The International Journal of Computer Networks & Communications (IJCNC)</i>, vol. 9, no. 5, 2017
-          <div class='more'><p>
-            Recent changes to the existing power grid are expected to influence the way energy is pro-vided and consumed by customers. Advanced Metering Infrastructure (AMI) is a tool to incorporate these changes for modernizing the electricity grid. Growing energy needs are forcing government agencies and utility companies to move towards AMI systems as part of larger smart grid initiatives. The smart grid promises to enable a more reliable, sustainable, and efficient power grid by taking advantage of information and communication technologies. However, this information-based power grid can reveal sensitive private information from the user’s perspective due to its ability to gather highly-granular power consumption data. This has resulted in limited consumer acceptance and proliferation of the smart grid. Hence, it is crucial to design a mechanism to prevent the leakage of such sensitive consumer usage information in smart grid. Among different solutions for preserving consumer privacy in Smart Grid Networks (SGN), private data aggregation techniques have received a tremendous focus from security researchers. Existing privacy-preserving aggregation mechanisms in SGNs utilize cryptographic techniques, specifically homomorphic properties of public-key cryp- tosystems. Such homomorphic approaches are bandwidth-intensive (due to large output blocks they generate), and in most cases, are computationally complex. In this paper, we present a novel and efficient CDMA-based approach to achieve privacy-preserving aggregation in SGNs by utilizing ran- dom perturbation of power consumption data and with limited use of traditional cryptography. We evaluate and validate the efficiency and performance of our proposed privacy-preserving data ag-gregation scheme through extensive statistical analyses and simulations.
-          </p></div>
-          <div class='arrow'></div>
-        </div>
+          <div class='item'>
+            <b>Towards Efficient Privacy-Preserving Data Aggregation for Advanced Metering Infrastructure</b>
+            <br>
+            N Alamatsaz, A Boustani, <b>N Alamatsaz</b>, and A Boustani
+            <br>
+            <i>The International Journal of Computer Networks & Communications (IJCNC)</i>, vol. 9, no. 5, 2017
+            <div class='more'>
+              <p>
+                Recent changes to the existing power grid are expected to influence the way energy is pro-vided and consumed by customers. Advanced Metering Infrastructure (AMI) is a tool to incorporate these changes for modernizing the electricity grid. Growing energy needs are forcing government agencies and utility companies to move towards AMI systems as part of larger smart grid initiatives. The smart grid promises to enable a more reliable, sustainable, and efficient power grid by taking advantage of information and communication technologies. However, this information-based power grid can reveal sensitive private information from the user’s perspective due to its ability to gather highly-granular power consumption data. This has resulted in limited consumer acceptance and proliferation of the smart grid. Hence, it is crucial to design a mechanism to prevent the leakage of such sensitive consumer usage information in smart grid. Among different solutions for preserving consumer privacy in Smart Grid Networks (SGN), private data aggregation techniques have received a tremendous focus from security researchers. Existing privacy-preserving aggregation mechanisms in SGNs utilize cryptographic techniques, specifically homomorphic properties of public-key cryp- tosystems. Such homomorphic approaches are bandwidth-intensive (due to large output blocks they generate), and in most cases, are computationally complex. In this paper, we present a novel and efficient CDMA-based approach to achieve privacy-preserving aggregation in SGNs by utilizing ran- dom perturbation of power consumption data and with limited use of traditional cryptography. We evaluate and validate the efficiency and performance of our proposed privacy-preserving data ag-gregation scheme through extensive statistical analyses and simulations.
+              </p>
+            </div>
+            <div class='arrow'></div>
+          </div>
 
-        <div class='item'>
-          <b>Neural correlates of modulation masking release: The role of sound deprivation</b>
-          <br>
-          A Ihlefeld, M Ning, SS Chaubal, and <b>N Alamatsaz</b>
-          <br>
-          <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3894, 2017
-          <div class='more'><p>
-            It is well documented that for tone detection in background noise, normally-hearing (NH) listeners have better behavioral thresholds when that noise is temporally modulated as compared to temporally unmodulated, a perceptual phenomenon referred to as Modulation Masking Release (MMR). However, hearing impaired listeners often do not show a dramatic difference in performance across these two tasks. Behavioral evidence from Mongolian gerbils (Meriones unguiculatus) with conductive hearing loss (CHL) supports the idea that sound deprivation alone can reduce MMR. Here, MMR was assessed in core auditory cortex in three NH animals, and one animal with CHL. Trained, awake gerbils listened passively to a target tone (1 kHz) embedded in modulated or unmodulated noise while a 16-channel chronically implanted microelectrode array recorded multi-unit neural spike activity in core auditory cortex. Results reveal that rate code correlates with behavioral thresholds at positive, but not negative Signal-to-Noise ratios. Effect of sound deprivation on MMR will be discussed using a Wilson-Cowan neural network model of cortical function.
-          </p></div>
-          <div class='arrow'></div>
-        </div>
+          <div class='item'>
+            <b>Neural correlates of modulation masking release: The role of sound deprivation</b>
+            <br>
+            A Ihlefeld, M Ning, SS Chaubal, and <b>N Alamatsaz</b>
+            <br>
+            <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3894, 2017
+            <div class='more'>
+              <p>
+                It is well documented that for tone detection in background noise, normally-hearing (NH) listeners have better behavioral thresholds when that noise is temporally modulated as compared to temporally unmodulated, a perceptual phenomenon referred to as Modulation Masking Release (MMR). However, hearing impaired listeners often do not show a dramatic difference in performance across these two tasks. Behavioral evidence from Mongolian gerbils (Meriones unguiculatus) with conductive hearing loss (CHL) supports the idea that sound deprivation alone can reduce MMR. Here, MMR was assessed in core auditory cortex in three NH animals, and one animal with CHL. Trained, awake gerbils listened passively to a target tone (1 kHz) embedded in modulated or unmodulated noise while a 16-channel chronically implanted microelectrode array recorded multi-unit neural spike activity in core auditory cortex. Results reveal that rate code correlates with behavioral thresholds at positive, but not negative Signal-to-Noise ratios. Effect of sound deprivation on MMR will be discussed using a Wilson-Cowan neural network model of cortical function.
+              </p>
+            </div>
+            <div class='arrow'></div>
+          </div>
 
-        <div class='item'>
-          <b>The effect of sound intensity on lateralization with interaural time differences</b>
-          <br>
-          <b>N Alamatsaz</b>, RM Shapley, and A Ihlefeld
-          <br>
-          <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3639, 2017
-          <div class='more'><p>
-            Previous studies examining the effect of sound intensity on ITD lateralization disagree on whether ITD lateralization changes with increasing sound level. We tested how sound intensity affects lateralization in three experiments. In all experiments, normal-hearing listeners judged the lateralization of band-limited target noise tokens (300 to 1200 Hz, 1 s duration, 10-ms cos-squared ramp, presented with insert earphones). For each ear and target noise, sensation level (SL) was estimated using two-down one-up adaptive tracking. Each target stimulus contained an ITD of 0, 75, 150, 225, 300, or 375 µs and was presented at 10, 25, or 40 dB SL. In experiment 1, listeners matched the ITD of a variable-ITD pointer (25 dB SL, 300-1200 Hz, 1 s duration, 10-ms cos-squared ramp) to each of the target tokens. In experiment 2, in each two-interval trial of a 2-AFC paradigm, the standard stimulus consisted of the same noise token as in experiment 1 and the signal stimulus had a randomly chosen ITD of +/− 0, 25, 50 or 75 µs relative to the target ITD. Listeners reported whether the sound moved to the left or to the right, and thresholds were estimated at the “50%-right” point. In experiment 3, listeners indicated the perceived laterality by visually pointing on a graphical user interface. Preliminary data suggest that sound level affects lateralization, but that individual differences require testing of a greater number listeners than have historically been assessed.
-          </p></div>
-          <div class='arrow'></div>
-        </div>
+          <div class='item'>
+            <b>The effect of sound intensity on lateralization with interaural time differences</b>
+            <br>
+            <b>N Alamatsaz</b>, RM Shapley, and A Ihlefeld
+            <br>
+            <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3639, 2017
+            <div class='more'>
+              <p>
+                Previous studies examining the effect of sound intensity on ITD lateralization disagree on whether ITD lateralization changes with increasing sound level. We tested how sound intensity affects lateralization in three experiments. In all experiments, normal-hearing listeners judged the lateralization of band-limited target noise tokens (300 to 1200 Hz, 1 s duration, 10-ms cos-squared ramp, presented with insert earphones). For each ear and target noise, sensation level (SL) was estimated using two-down one-up adaptive tracking. Each target stimulus contained an ITD of 0, 75, 150, 225, 300, or 375 µs and was presented at 10, 25, or 40 dB SL. In experiment 1, listeners matched the ITD of a variable-ITD pointer (25 dB SL, 300-1200 Hz, 1 s duration, 10-ms cos-squared ramp) to each of the target tokens. In experiment 2, in each two-interval trial of a 2-AFC paradigm, the standard stimulus consisted of the same noise token as in experiment 1 and the signal stimulus had a randomly chosen ITD of +/− 0, 25, 50 or 75 µs relative to the target ITD. Listeners reported whether the sound moved to the left or to the right, and thresholds were estimated at the “50%-right” point. In experiment 3, listeners indicated the perceived laterality by visually pointing on a graphical user interface. Preliminary data suggest that sound level affects lateralization, but that individual differences require testing of a greater number listeners than have historically been assessed.
+              </p>
+            </div>
+            <div class='arrow'></div>
+          </div>
 
-        <div class='item'>
-          <b>Towards Improved Safety, Selectivity and Energy Efficiency of Retinal Stimulation</b>
-          <br>
-          <b>N Alamatsaz</b>, S Moradi, and P Moallem
-          <br>
-          <i>Iranian Conference on Biomedical Engineering (ICBME)</i>, vol. 21, 2014
+          <div class='item'>
+            <b>Towards Improved Safety, Selectivity and Energy Efficiency of Retinal Stimulation</b>
+            <br>
+            <b>N Alamatsaz</b>, S Moradi, and P Moallem
+            <br>
+            <i>Iranian Conference on Biomedical Engineering (ICBME)</i>, vol. 21, 2014
+          </div>
         </div>
       </div>
     </div>
