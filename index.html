@@ -214,7 +214,6 @@ layout: home
       margin: 1rem -.5rem;
     }
     .card {
-      flex: 0 0 calc(100%/6 - 1rem);
       vertical-align: top;
       margin: .5rem;
       border: none;
@@ -223,13 +222,16 @@ layout: home
       box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.12), 0 .5rem 1rem 0 rgba(0,0,0,.12);
       transition: transform .3s, box-shadow .3s, background .3s;
     }
-    @media (max-width: 1850px) { .card { flex: 0 0 calc(100%/5 - 1rem); } }
+    @media (min-width: 3100px) { .card { flex: 0 0 calc(100%/8 - 1rem); } }
+    @media (max-width: 3100px) { .card { flex: 0 0 calc(100%/7 - 1rem); } }
+    @media (max-width: 2500px) { .card { flex: 0 0 calc(100%/6 - 1rem); } }
+    @media (max-width: 1900px) { .card { flex: 0 0 calc(100%/5 - 1rem); } }
     @media (max-width: 1500px) { .card { flex: 0 0 calc(100%/4 - 1rem); } }
     @media (max-width: 1200px) { .card { flex: 0 0 calc(100%/3 - 1rem); } }
-    @media (max-width: 950px) { .card { flex: 0 0 calc(100%/2 - 1rem); } }
-    @media (max-width: 750px) { .card { flex: 0 0 calc(100%/3 - 1rem); } }
-    @media (max-width: 550px) { .card { flex: 0 0 calc(100%/2 - 1rem); } }
-    @media (max-width: 350px) { .card { flex: 0 0 calc(100% - 1rem); } }
+    @media (max-width: 950px)  { .card { flex: 0 0 calc(100%/2 - 1rem); } }
+    @media (max-width: 750px)  { .card { flex: 0 0 calc(100%/3 - 1rem); } }
+    @media (max-width: 550px)  { .card { flex: 0 0 calc(100%/2 - 1rem); } }
+    @media (max-width: 350px)  { .card { flex: 0 0 calc(100%   - 1rem); } }
     .card:hover {
       /* background: rgb(250,250,255); */
       box-shadow: 0 .25rem .5rem .2rem rgba(0,0,0,.12), 0 .5rem 1rem .2rem rgba(0,0,0,.12);
@@ -486,7 +488,7 @@ layout: home
 
             <div class='card'>
               <a href='https://github.com/nalamat/ears/blob/master/graphics.py'>
-                <h3>GLPlot</h3>
+                <h3>glPlotLib</h3>
                 <div class='card-content'>GPU-accelerated online plotting of multichannel signals</div>
               </a>
             </div>
