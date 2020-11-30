@@ -207,6 +207,53 @@ layout: home
       text-decoration: underline;
     }
 
+    .card-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 1rem -.5rem;
+    }
+    .card {
+      flex: 0 0 calc(100%/5 - 4*.5rem);
+      vertical-align: top;
+      margin: .5rem;
+      border: none;
+      border-radius: 0;
+      overflow: hidden;
+      box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.13), 0 .5rem 1rem 0 rgba(0,0,0,.13);
+      transition: transform .3s, background .3s;
+    }
+    @media (max-width: 1500px) { .card { flex: 0 0 calc(100%/4 - 3*.5rem); } }
+    @media (max-width: 1200px) { .card { flex: 0 0 calc(100%/3 - 2*.5rem); } }
+    @media (max-width: 950px) { .card { flex: 0 0 calc(100%/2 - 2*.5rem); } }
+    @media (max-width: 750px) { .card { flex: 0 0 calc(100%/3 - 2*.5rem); } }
+    @media (max-width: 550px) { .card { flex: 0 0 calc(100%/2 - 2*.5rem); } }
+    @media (max-width: 350px) { .card { flex: 0 0 calc(100% - .5rem); } }
+    .card:hover {
+      /* background: rgb(250,250,255); */
+      transform: translate(0, -.3rem);
+    }
+    .card a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+    .card h3 {
+      margin: 0;
+      padding: .5rem;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.15rem;
+      background: rgb(235,235,250);
+      transition: background .3s;
+    }
+    .card:hover h3 {
+      background: rgb(240,240,255);
+    }
+    .card-content {
+      margin: .5rem;
+      /* margin-top: 0; */
+    }
+
     .nodecoration {
       color: inherit;
       font-weight: inherit;
@@ -255,6 +302,7 @@ layout: home
 
   </style>
 </head>
+
 
 <body>
   <div class='container'>
@@ -408,6 +456,73 @@ layout: home
           </div>
         </div>
 
+
+        <h2>Projects</h2>
+
+        <div class='section'>
+          <div class='card-container'>
+            <div class='card'>
+              <a href='https://github.com/nalamat/ears'>
+                <h3>EARS</h3>
+                <div class='card-content'>Electrophysiology Auditory Recording System</div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/ephys'>
+                <h3>ePhys</h3>
+                <div class='card-content'>Analysis of neural recordings from auditory cortex</div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/avroscope'>
+                <h3>AVR Oscope</h3>
+                <div class='card-content'>A low-cost low-frequency USB oscilloscope</div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/circuitoptim'>
+                <h3>Circuit Optim</h3>
+                <div class='card-content'>A circuit optimization toolbox for MATLAB</div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/bcomp'>
+                <h3>BCOMP</h3>
+                <div class='card-content'>Gate-level simulation of the Basic computer</div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/basm'>
+                <h3>BASM</h3>
+                <div class='card-content'>The Basic computer assembler</div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/ajaxify-wp'>
+                <h3>Ajaxify WP</h3>
+                <div class='card-content'>Hybrid ajaxify plugin for WordPress</div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/smscontroller'>
+                <h3>SMS Controller</h3>
+                <div class='card-content'>Remotely control home appliances via text messages</div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/mriviewer'>
+                <h3>MRI Viewer</h3>
+                <div class='card-content'>Interactive UI for 3D analysis of MRI images</div>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -536,4 +651,4 @@ layout: home
   </div>
 </body>
 
-</head>
+</html>
