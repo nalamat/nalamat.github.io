@@ -37,9 +37,13 @@ layout: home
   </script>
 
   <style>
+    :root {
+      --corners: .4rem;
+    }
     * {
       margin: 0 0;
       padding: 0 0;
+      box-sizing: border-box;
     }
 
     html, body {
@@ -126,6 +130,7 @@ layout: home
       margin-bottom: .5rem;
       padding: .5rem 1rem;
       /* text-align: center; */
+      border-radius: var(--corners);
       font-size: 2rem;
       font-weight: bold;
       color: white;
@@ -144,6 +149,7 @@ layout: home
     .item {
       margin: 0 -.5rem;
       padding: .5rem .5rem;
+      border-radius: var(--corners);
       transition: background .3s;
     }
     .item:hover {
@@ -221,10 +227,11 @@ layout: home
       margin: 1rem -.5rem;
     }
     .card {
+      position: static;
       vertical-align: top;
       margin: .5rem;
       border: none;
-      border-radius: 0;
+      border-radius: var(--corners);
       overflow: hidden;
       box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.12), 0 .5rem 1rem 0 rgba(0,0,0,.12);
       transition: transform .3s, box-shadow .3s, background .3s;
