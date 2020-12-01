@@ -245,6 +245,7 @@ layout: home
       margin: 0;
       padding: .5rem;
       text-align: center;
+      vertical-align: center;
       font-weight: bold;
       font-size: 1.15rem;
       background: rgb(235,235,250);
@@ -252,6 +253,9 @@ layout: home
     }
     .card:hover h3 {
       background: rgb(240,240,255);
+    }
+    .card img {
+      width: 100%;
     }
     .card-content {
       margin: .5rem;
@@ -467,7 +471,8 @@ layout: home
           <div class='card-container'>
             <div class='card'>
               <a href='https://github.com/nalamat/ears'>
-                <h3>EARS</h3>
+                <h3><img src='images/ears.svg' style='width: 1.2em;'> EARS</h3>
+                <img src='images/ears.png'>
                 <div class='card-content'>Electrophysiology Auditory Recording System</div>
               </a>
             </div>
@@ -475,6 +480,7 @@ layout: home
             <div class='card'>
               <a href='https://github.com/nalamat/ephys'>
                 <h3>ePhys</h3>
+                <img src='images/ephys.png' style='padding: 0 5%;'>
                 <div class='card-content'>Analysis of neural recordings from auditory cortex</div>
               </a>
             </div>
@@ -482,6 +488,7 @@ layout: home
             <div class='card'>
               <a href='https://github.com/nalamat/ears/blob/master/pipeline.py'>
                 <h3>Pypeline</h3>
+                <img src='images/pypeline.png' style='padding: 3% 8%;'>
                 <div class='card-content'>Object-oriented framework for online processing of data streams</div>
               </a>
             </div>
@@ -489,7 +496,32 @@ layout: home
             <div class='card'>
               <a href='https://github.com/nalamat/ears/blob/master/graphics.py'>
                 <h3>glPlotLib</h3>
+                <img src='images/glplotlib.png'>
                 <div class='card-content'>GPU-accelerated online plotting of multichannel signals</div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/circuitoptim'>
+                <h3>Circuit Optim</h3>
+                <img src='images/circuitoptim.png' style='padding: 1% 7%;'>
+                <div class='card-content'>A circuit optimization toolbox for MATLAB</div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/bcomp'>
+                <h3>BCOMP</h3>
+                <img src='images/bcomp.png' style='padding: 2% 7%;'>
+                <div class='card-content'>Gate-level simulation of the Basic computer</div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/basm'>
+                <h3>BASM</h3>
+                <img src='images/basm.png'>
+                <div class='card-content'>The Basic computer assembler</div>
               </a>
             </div>
 
@@ -504,27 +536,6 @@ layout: home
               <a href='https://github.com/nalamat/avroscope'>
                 <h3>AVROscope</h3>
                 <div class='card-content'>A low-cost low-frequency USB oscilloscope</div>
-              </a>
-            </div>
-
-            <div class='card'>
-              <a href='https://github.com/nalamat/circuitoptim'>
-                <h3>Circuit Optim</h3>
-                <div class='card-content'>A circuit optimization toolbox for MATLAB</div>
-              </a>
-            </div>
-
-            <div class='card'>
-              <a href='https://github.com/nalamat/bcomp'>
-                <h3>BCOMP</h3>
-                <div class='card-content'>Gate-level simulation of the Basic computer</div>
-              </a>
-            </div>
-
-            <div class='card'>
-              <a href='https://github.com/nalamat/basm'>
-                <h3>BASM</h3>
-                <div class='card-content'>The Basic computer assembler</div>
               </a>
             </div>
 
