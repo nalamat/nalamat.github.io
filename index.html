@@ -97,7 +97,7 @@ layout: home
       color: white;
       background: rgb(100,140,250);
     }
-    .sidebar .inner {
+    header {
       text-align: center;
     }
     .headshot {
@@ -107,7 +107,7 @@ layout: home
       width: 7rem;
       clip-path: circle();
     }
-    .sidebar h1 { /* for website title, compatibile with screen readers*/
+    header h1 { /* for website title, compatibile with screen readers*/
       margin: .5em 0;
       font-size: 3rem;
       font-weight: bold;
@@ -134,12 +134,12 @@ layout: home
       margin-top: 4rem;
       font-size: 1.25rem;
     }
-    .copyright {
+    footer {
       margin: .5rem;
       font-size: .75rem;
       text-align: center;
     }
-    .copyright a {
+    footer a {
       color: rgb(220,220,255);
     }
 
@@ -150,7 +150,7 @@ layout: home
       justify-content: center;
       /* background: rgb(230,230,250); */
     }
-    .content .inner {
+    main {
       width: 100%;
       padding: 5% 10%;
       overflow-y: scroll;
@@ -174,7 +174,7 @@ layout: home
     p {
       text-align: justify;
     }
-    .section {
+    section {
       padding: 0 1rem;
     }
     .item {
@@ -363,7 +363,7 @@ layout: home
     <div class='sidebar'>
       <div></div>
 
-      <div class='inner'>
+      <header>
         <img class='headshot' src='images/nima.jpg'>
 
         <h1>
@@ -382,28 +382,28 @@ layout: home
         <div class='construction'>
           Website under construction!
         </div>
-      </div>
+      </header>
 
-      <div class='copyright'>
+      <footer>
         © 2020 under <a href=https://gnu.org/licenses/gpl-3.0.en.html>GPLv3</a>
         | <a href='https://github.com/nalamat/nalamat.github.io'>View source</a>
         <br>
         Powered by <a href='https://pages.github.com'>GitHub Pages</a> and <a href='https://jekyllrb.com'>Jekyll</a>
-      </div>
+      </footer>
     </div>
 
 
     <div class='content'>
-      <div class='inner'>
-        <div class='section'>
+      <main>
+        <section>
           <p>I am a versatile self-starter with years of experience in programming with Python, C++, R; a strong background in machine learning, statistical modeling, signal processing; and engineering skills such as embedded systems and circuit design.</p>
           <p>My role as a graduate student in neuroscience has evolved around computational modeling of hearing phenomena through analyzing large amounts of brain signals by parallelized implementation of machine learning methods (such as K-SVD), and statistical modeling of human sound localization data using nonlinear mixed-effects model (NLME). Meanwhile, I enjoyed assisting Prof. Antje Ihlefeld in setting up an entire animal research lab (from designing hardware to writing software) and mentoring undergraduate students towards obtaining research grants.</p>
-        </div>
+        </section>
 
 
         <h2>Education</h2>
 
-        <div class='section'>
+        <section>
           <div class='item'>
             <div class='cols'>
               <div><b>Ph.D. in Biomedical Engineering</b></div>
@@ -463,12 +463,12 @@ layout: home
             </div>
             <div class='arrow'></div>
           </div>
-        </div>
+        </section>
 
 
         <h2>Experience</h2>
 
-        <div class='section'>
+        <section>
           <div class='item'>
             <div class='cols'>
               <div><b>Graduate Research Assistant</b></div>
@@ -512,12 +512,12 @@ layout: home
               <div class='info'>Isfahan Sci. & Tech. Town, Iran</div>
             </div>
           </div>
-        </div>
+        </section>
 
 
         <h2>Projects</h2>
 
-        <div class='section'>
+        <section>
           <div class='card-container'>
             <div class='card'>
               <a href='https://github.com/nalamat/ears'>
@@ -628,12 +628,12 @@ layout: home
               </a>
             </div>
           </div>
-        </div>
+        </section>
 
 
         <h2>Publications</h2>
 
-        <div class='section'>
+        <section>
           <div class='item'>
             <b>Hemodynamic responses link individual differences in informational masking to the vicinity of superior temporal gyrus</b>
             <br>
@@ -773,8 +773,8 @@ layout: home
             <br>
             <i>Iranian Conference on Biomedical Engineering (ICBME)</i>, vol. 21, 2014
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   </div>
 </body>
