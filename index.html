@@ -78,8 +78,8 @@ layout: home
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
 
-    .container {
-      all: unset;    /* override bootstrap styles */
+    .page {
+      all: unset;
       display: flex;
       flex-direction: row;
       width: 100%;
@@ -99,6 +99,7 @@ layout: home
     }
     header {
       text-align: center;
+      overflow-y: scroll;
     }
     .headshot {
       display: block;
@@ -107,8 +108,8 @@ layout: home
       width: 7rem;
       clip-path: circle();
     }
-    header h1 { /* for website title, compatibile with screen readers*/
-      margin: .5em 0;
+    header h1 { /* for website title */
+      margin: 3rem 0;
       font-size: 3rem;
       font-weight: bold;
     }
@@ -153,11 +154,11 @@ layout: home
     }
     main {
       width: 100%;
-      padding: 5% 10%;
+      padding: 7% 10%;
       overflow-y: scroll;
       color: rgb(0,0,50);
     }
-    h2 {
+    main h2 {
       margin-top: 1.5rem;
       margin-bottom: .5rem;
       padding: .5rem 1rem;
@@ -320,29 +321,32 @@ layout: home
     }
 
     @media (max-width: 750px) {
-      .container
-      {
+      .page {
         flex-direction: column;
         height: auto;
       }
 
-      .sidebar
-      {
+      .sidebar {
         width: 100%;
         height: auto;
-      }
-      .construction {
-        margin-top: 2em;
-        margin-bottom: 2em;
       }
 
-      .content
-      {
+      header h1 {
+        margin: 1.5rem 0;
+      }
+      header h2 {
+        margin: 1.5rem 0;
+      }
+
+      footer {
+        margin-top: 1.5rem;
+      }
+
+      .content {
         width: 100%;
         height: auto;
       }
-      .content .inner
-      {
+      main {
         padding: 5% 5%;
         overflow-y: visible;
       }
@@ -360,7 +364,7 @@ layout: home
 
 
 <body>
-  <div class='container'>
+  <div class='page'>
     <div class='sidebar'>
       <div></div>
 
