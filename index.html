@@ -300,7 +300,12 @@ layout: home
       box-shadow: 0 .25rem .5rem .2rem rgba(0,0,0,.12), 0 .5rem 1rem .2rem rgba(0,0,0,.12);
       transform: translate(0, -.3rem);
     }
-    .card a {
+    .card > a {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
       color: inherit;
       text-decoration: inherit;
     }
@@ -320,10 +325,49 @@ layout: home
     .card img {
       width: 100%;
     }
-    .card-content {
+    .card p {
       margin: .5rem;
+      text-align: left;
       /* margin-top: 0; */
     }
+    .card-tags {
+      margin: .5rem;
+      margin-top: -.2rem;
+      /* background: black; */
+    }
+    .tag {
+      display: inline-block;
+      /* vertical-align: bottom; */
+      /* margin: .5rem; */
+      padding: .2rem .4rem;
+      border-radius: calc(var(--corners) / 1.2);
+      font-size: .9rem;
+      background: rgb(80,80,200);
+      color: white;
+      opacity: .7;
+      transition: opacity .3s;
+    }
+    .card:hover .tag {
+      opacity: 1;
+    }
+    .tag.python { background: #4B8BBE; }
+    .tag.python:after { content: 'Python'; }
+    .tag.glsl { background: rgb(84, 130, 158); }
+    .tag.glsl:after { content: 'GLSL'; }
+    .tag.matlab { background: rgb(220, 90, 40); }
+    .tag.matlab:after { content: 'MATLAB'; }
+    .tag.r { background: rgb(34, 100, 174); }
+    .tag.r:after { content: 'R'; }
+    .tag.cpp { background: rgb(23, 164, 71); }
+    .tag.cpp:after { content: 'C++'; }
+    .tag.cad { background: rgb(120, 140, 80); }
+    .tag.cad:after { content: 'CAD'; }
+    .tag.cs { background: rgb(151, 107, 203); }
+    .tag.cs:after { content: 'C#'; }
+    .tag.css { background: rgb(33, 113, 179); }
+    .tag.css:after { content: 'CSS'; }
+    .tag.js { background: rgb(219, 155, 52); }
+    .tag.js:after { content: 'JavaScript'; }
 
     .nodecoration {
       color: inherit;
@@ -569,110 +613,189 @@ layout: home
           <div class='card-container'>
             <div class='card'>
               <a href='https://github.com/nalamat/ears'>
-                <h3><img src='images/ears.svg' style='position: relative; top: -.1em; width: 1.1em;'> EARS</h3>
-                <img src='images/ears.png'>
-                <div class='card-content'>Electrophysiology Auditory Recording System</div>
+                <div class='card-content'>
+                  <h3><img src='images/ears.svg' style='position: relative; top: -.1em; width: 1.1em;'> EARS</h3>
+                  <img src='images/ears.png'>
+                  <p>Electrophysiology Auditory Recording System</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag python'></div>
+                  <div class='tag glsl'></div>
+                </div>
               </a>
             </div>
 
             <div class='card'>
               <a href='https://github.com/nalamat/ephys'>
-                <h3>ePhys</h3>
-                <img src='images/ephys.png' style='padding: 0 5%;'>
-                <div class='card-content'>Analysis of neural recordings from auditory cortex</div>
+                <div class='card-content'>
+                  <h3>ePhys</h3>
+                  <img src='images/ephys.png' style='padding: 0 5%;'>
+                  <p>Analysis of neural recordings from auditory cortex</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag matlab'></div>
+                  <div class='tag r'></div>
+                </div>
               </a>
             </div>
 
             <div class='card'>
               <a href='https://github.com/nalamat/pypeline'>
-                <h3>Pypeline</h3>
-                <img src='images/pypeline.png' style='padding: 9% 6%; padding-bottom: 3%;'>
-                <div class='card-content'>Object-oriented model for online processing of data streams</div>
+                <div class='card-content'>
+                  <h3>Pypeline</h3>
+                  <img src='images/pypeline.png' style='padding: 9% 6%; padding-bottom: 3%;'>
+                  <p>Object-oriented model for online processing of data streams</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag python'></div>
+                </div>
               </a>
             </div>
 
             <div class='card'>
               <a href='https://github.com/nalamat/glplotlib'>
-                <h3>glPlotLib</h3>
-                <img src='images/glplotlib.png'>
-                <div class='card-content'>Real-time GPU-accelerated plotting toolbox</div>
+                <div class='card-content'>
+                  <h3>glPlotLib</h3>
+                  <img src='images/glplotlib.png'>
+                  <p>Real-time GPU-accelerated plotting toolbox</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag python'></div>
+                  <div class='tag glsl'></div>
+                </div>
               </a>
             </div>
 
             <div class='card'>
               <a href='https://github.com/nalamat/mriviewer'>
-                <h3>MRI Viewer</h3>
-                <img src='images/mriviewer.png'>
-                <div class='card-content'>Interactive UI for 3D analysis of MRI images</div>
-              </a>
-            </div>
-
-            <div class='card'>
-              <a href='https://github.com/nalamat/circuitoptim'>
-                <h3>Circuit Optim</h3>
-                <img src='images/circuitoptim.png' style='padding: 2% 9%; padding-bottom: 0;'>
-                <div class='card-content'>A circuit optimization toolbox for MATLAB</div>
-              </a>
-            </div>
-
-            <div class='card'>
-              <a href='https://github.com/nalamat/bcomp'>
-                <h3>BCOMP</h3>
-                <img src='images/bcomp.png' style='padding: 5% 6%; padding-bottom: 0%;'>
-                <div class='card-content'>Gate-level simulation of the Basic computer</div>
-              </a>
-            </div>
-
-            <div class='card'>
-              <a href='https://github.com/nalamat/basm'>
-                <h3>BASM</h3>
-                <img src='images/basm.png'>
-                <div class='card-content'>The Basic computer assembler</div>
-              </a>
-            </div>
-
-            <div class='card'>
-              <a href='https://github.com/nalamat/easydaqmx'>
-                <h3>EasyDAQmx</h3>
-                <img src='images/easydaqmx.jpg'>
-                <div class='card-content'>No-brainer object-oriented interface for NI DAQ devices</div>
+                <div class='card-content'>
+                  <h3>MRI Viewer</h3>
+                  <img src='images/mriviewer.png'>
+                  <p>Interactive UI for 3D analysis of MRI images</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag matlab'></div>
+                </div>
               </a>
             </div>
 
             <div class='card'>
               <a href='https://datadryad.org/stash/dataset/doi:10.5061/dryad.t8c381f'>
-                <h3>nlme.pwr</h3>
-                <img src='images/nlme.pwr.png' style='padding: .1rem .1rem;'>
-                <div class='card-content'>Power analysis for Nonlinear Mixed-Effects (NLME) models</div>
+                <div class='card-content'>
+                  <h3>nlme.pwr</h3>
+                  <img src='images/nlme.pwr.png' style='padding: .1rem .1rem;'>
+                  <p>Power analysis for Nonlinear Mixed-Effects (NLME) models</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag r'></div>
+                </div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/circuitoptim'>
+                <div class='card-content'>
+                  <h3>Circuit Optim</h3>
+                  <img src='images/circuitoptim.png' style='padding: 2% 9%; padding-bottom: 0;'>
+                  <p>A circuit optimization toolbox for MATLAB</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag matlab'></div>
+                  <div class='tag cad'></div>
+                </div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/bcomp'>
+                <div class='card-content'>
+                  <h3>BCOMP</h3>
+                  <img src='images/bcomp.png' style='padding: 5% 6%; padding-bottom: 0%;'>
+                  <p>Gate-level simulation of the Basic computer</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag cad'></div>
+                </div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/basm'>
+                <div class='card-content'>
+                  <h3>BASM</h3>
+                  <img src='images/basm.png'>
+                  <p>The Basic computer assembler</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag cpp'></div>
+                </div>
+              </a>
+            </div>
+
+            <div class='card'>
+              <a href='https://github.com/nalamat/easydaqmx'>
+                <div class='card-content'>
+                  <h3>EasyDAQmx</h3>
+                  <img src='images/easydaqmx.jpg'>
+                  <p>No-brainer object-oriented interface for NI DAQ devices</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag python'></div>
+                </div>
               </a>
             </div>
 
             <div class='card'>
               <a href='javascript:;'>
-                <h3>Audio Calibration</h3>
-                <img src='images/audio-calibration.jpg'>
-                <div class='card-content'>Toolbox for calibrating frequency response of audio playback systems</div>
+                <div class='card-content'>
+                  <h3>Audio Calibration</h3>
+                  <img src='images/audio-calibration.jpg'>
+                  <p>Toolbox for calibrating frequency response of audio playback systems</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag python'></div>
+                  <div class='tag matlab'></div>
+                </div>
               </a>
             </div>
 
             <div class='card'>
               <a href='https://github.com/nalamat/avroscope'>
-                <h3>AVROscope</h3>
-                <div class='card-content'>A low-cost low-frequency USB oscilloscope using Atmel AVR microcontroller</div>
+                <div class='card-content'>
+                  <h3>AVROscope</h3>
+                  <p>A low-cost low-frequency USB oscilloscope using Atmel AVR microcontroller</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag cpp'></div>
+                  <div class='tag cs'></div>
+                  <div class='tag cad'></div>
+                </div>
               </a>
             </div>
 
             <div class='card'>
               <a href='https://github.com/nalamat/ajaxify-wp'>
-                <h3>Ajaxify WP</h3>
-                <div class='card-content'>Hybrid ajaxify plugin for WordPress, load pages with Ajax while keeping normal link behavior intact</div>
+                <div class='card-content'>
+                  <h3>Ajaxify WP</h3>
+                  <p>Hybrid ajaxify plugin for WordPress, load pages with Ajax while keeping normal link behavior intact</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag css'></div>
+                  <div class='tag js'></div>
+                </div>
               </a>
             </div>
 
             <div class='card'>
               <a href='https://github.com/nalamat/smscontroller'>
-                <h3>SMS Controller</h3>
-                <div class='card-content'>Remotely control home appliances with text message commands</div>
+                <div class='card-content'>
+                  <h3>SMS Controller</h3>
+                  <p>Remotely control home appliances with text message commands</p>
+                </div>
+                <div class='card-tags'>
+                  <div class='tag cpp'></div>
+                  <div class='tag cad'></div>
+                </div>
               </a>
             </div>
           </div>
