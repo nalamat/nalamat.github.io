@@ -46,6 +46,7 @@ layout: home
   <style>
     :root {
       --corners: .4rem;
+      --anim: .3s;
     }
 
     * {
@@ -140,7 +141,7 @@ layout: home
       font-size: 1.75rem;
       text-shadow: .15em .15em .15em rgba(0,0,0,.2);
       text-decoration: none;
-      transition: color .3s, transform .3s;
+      transition: color var(--anim), transform var(--anim);
     }
     .favicons a:hover {
       color: rgb(220,220,255);
@@ -196,7 +197,7 @@ layout: home
       margin: 0 -.5rem;
       padding: .5rem .5rem;
       border-radius: var(--corners);
-      transition: background .3s;
+      transition: background var(--anim);
     }
     .item:hover {
       background: rgb(240,240,255);
@@ -217,39 +218,48 @@ layout: home
     .item .cols div:last-child {
       text-align: right;
     }
+    .item .cols .info {
+    }
     .item .cols .buttons {
-      line-height: 1.8;
     }
     .item .more {
       overflow: hidden;
       padding: 0 1rem;
       max-height: 0;    /* animated through javascript */
       color: rgb(0,0,120);
-      transition: all .3s ease-in;
+      transition: all var(--anim) ease-in;
     }
     .item .more.expand {
       margin-top: .3rem;
       padding-top: 0;
-      transition: all .3s ease-out;
+      transition: all var(--anim) ease-out;
     }
     .item:hover .more.expand {
       padding-top: -2rem;
     }
+    .item .float-right {
+      float: right;
+      text-align: right;
+    }
     .item .button {
+      display: inline-block;
       padding: .2rem;
       padding-bottom: .1rem;
+      line-height: 1;
       border: 1px solid rgb(200,200,255);
       border-radius: var(--corners);
       font-size: .9rem;
       color: inherit;
-      transition: border .3s, background .3s;
+      transition: border var(--anim), background var(--anim), color var(--anim);
     }
     .item:hover .button {
       background: rgb(250,250,255);
       border: 1px solid rgb(180,180,235);
     }
     .item .button:hover {
-      color: inherit;
+      background: rgb(245,245,255);
+      color: rgb(60,60,200);
+      text-decoration: inherit;
     }
     .item .arrow {
       margin-top: -.25rem;
@@ -258,14 +268,14 @@ layout: home
       width: fill;
       text-align: center;
       background: rgb(90,90,170);
-      opacity: 0;
+      opacity: .2;
       -webkit-mask-image: url(images/chevron-down.svg);
       -webkit-mask-position: center;
       -webkit-mask-repeat: no-repeat;
       mask-image: url(images/chevron-down.svg);
       mask-position: center;
       mask-repeat: no-repeat;
-      transition: opacity .3s, transform .3s ease-in;
+      transition: opacity var(--anim), transform var(--anim) ease-in;
     }
     .item:hover .arrow {
       opacity: 1;
@@ -273,7 +283,7 @@ layout: home
     .item .arrow.expand {
       transform: rotate(-180deg);
       opacity: .2;
-      transition: opacity .3s, transform .3s ease-out;
+      transition: opacity var(--anim), transform var(--anim) ease-out;
     }
     .item:hover .arrow.expand {
       opacity: 1;
@@ -306,7 +316,7 @@ layout: home
       border-radius: var(--corners);
       overflow: hidden;
       box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.12), 0 .5rem 1rem 0 rgba(0,0,0,.12);
-      transition: transform .3s, box-shadow .3s, background .3s;
+      transition: transform var(--anim), box-shadow var(--anim), background var(--anim);
     }
     @media (min-width: 3100px) { :root { --card-cols: 8; } }
     @media (max-width: 3100px) { :root { --card-cols: 7; } }
@@ -340,14 +350,14 @@ layout: home
       font-weight: bold;
       font-size: 1rem;
       background: rgb(235,235,250);
-      transition: background .3s;
+      transition: background var(--anim);
     }
     .card:hover h3 {
       background: rgb(240,240,255);
     }
     .card img {
       width: 100%;
-      transition: transform .3s;
+      transition: transform var(--anim);
     }
     .card p {
       margin: .5rem;
@@ -369,7 +379,7 @@ layout: home
       background: rgb(80,80,200);
       color: white;
       opacity: .6;
-      transition: opacity .3s;
+      transition: opacity var(--anim);
     }
     .card:hover .tag {
       opacity: 1;
@@ -434,12 +444,12 @@ layout: home
         overflow-y: visible;
       }
 
-      .item .arrow {
+      /* .item .arrow {
         opacity: .2;
       }
       .item .arrow.expand {
         opacity: .2;
-      }
+      } */
     }
 
   </style>
@@ -514,10 +524,6 @@ layout: home
               Dissertation: “Towards Understanding the Role of Central Processing in Release from Masking”
               <br>
               Advisor: Prof. Antje Ihlefeld
-              <div class='buttons'>
-                <a class='button' href='https://njit.edu'>University Website</a>
-                <a class='button' href='https://biomedical.njit.edu'>Program Website</a>
-              </div>
             </div>
             <div class='arrow'></div>
           </div>
@@ -575,9 +581,25 @@ layout: home
               <div class='info'>Newark, NJ</div>
             </div>
             <div class='more'>
-              <p>By non-linear mixed-effects (NLME) modeling of human sound localization data we uncovered level dependence of perceived sound direction and proposed a unified computational model, overhauling the established view in the field. Further mining of the data has revealed even more interesting effects of short- and long-term adaptation when localizing with interaural time differences. Analysis in R with nlme package. <a href='https://doi.org/10.7554/eLife.47027'>Link</a></p>
-              <p>We discovered a reversal in coding scheme of target sounds in presence of background interference (the cocktail party problem) at negative signal-to-noise ratios using a combination of signal processing, pattern recognition, unsupervised and supervised learning methods to process electrical activity of neurons. <a href='https://github.com/nalamat/ephys'>Link</a></p>
-              <p>Electrophysiology Auditory Recording System (EARS) project: I wrote an open source package in Python and GLSL (OpenGL Shading Language) for online processing, visualization and recording of brain signals, synchronized in microseconds with behavior of animals while implanted with microelectrodes. <a href='https://github.com/nalamat/ears'>Link</a></p>
+              <p>
+                By non-linear mixed-effects (NLME) modeling of human sound localization data we uncovered level dependence of perceived sound direction and proposed a unified computational model, overhauling the established view in the field. Further mining of the data has revealed even more interesting effects of short- and long-term adaptation when localizing with interaural time differences. Analysis in R with nlme package.
+                <span style='float: right; text-align: right;'>
+                  <a class='button' href='https://doi.org/10.7554/eLife.47027'>Link</a>
+                  <a class='button' href='https://doi.org/10.5061/dryad.t8c381f'>Code</a>
+                </span>
+              </p>
+              <p>
+                We discovered a reversal in coding scheme of target sounds in presence of background interference (the cocktail party problem) at negative signal-to-noise ratios using a combination of signal processing, pattern recognition, unsupervised and supervised learning methods to process electrical activity of neurons.
+                <span class='float-right'>
+                  <a class='button' href='https://github.com/nalamat/ephys'>Code</a>
+                </span>
+              </p>
+              <p>
+                Electrophysiology Auditory Recording System (EARS) project: I wrote an open source package in Python and GLSL (OpenGL Shading Language) for online processing, visualization and recording of brain signals, synchronized in microseconds with behavior of animals while implanted with microelectrodes.
+                <span class='float-right'>
+                  <a class='button' href='https://github.com/nalamat/ears'>Code</a>
+                </span>
+              </p>
               <p>Mentored a team of six undergraduate students towards obtaining research grants and completion of multiple projects ranging from neural signal processing and animal behavioral training to human psychoacoustics.</p>
               <p>Assisted in setting up an entire animal research lab from the ground up under supervision of Prof. Antje Ihlefeld.</p>
             </div>
