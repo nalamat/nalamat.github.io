@@ -324,27 +324,28 @@ layout: home
     }
     .card img {
       width: 100%;
+      transition: transform .3s;
     }
     .card p {
       margin: .5rem;
       text-align: left;
       /* margin-top: 0; */
     }
+
     .card-tags {
-      margin: .5rem;
-      margin-top: -.2rem;
-      /* background: black; */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: .25rem;
     }
     .tag {
-      display: inline-block;
-      /* vertical-align: bottom; */
-      /* margin: .5rem; */
+      margin: .25rem;
       padding: .2rem .4rem;
-      border-radius: calc(var(--corners) / 1.2);
+      border-radius: var(--corners);
       font-size: .9rem;
       background: rgb(80,80,200);
       color: white;
-      opacity: .7;
+      opacity: .6;
       transition: opacity .3s;
     }
     .card:hover .tag {
