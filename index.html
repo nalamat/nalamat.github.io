@@ -23,26 +23,8 @@ layout: home
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://googletagmanager.com/gtag/js?id=G-W4NCHJK0BE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-W4NCHJK0BE');
-  </script>
 
-  <script type='text/javascript'>
-    $(document).on('click', '.item.arrow', function() {
-      $(this).toggleClass('expand');
-      more = $(this).find('.more').toggleClass('expand')[0];
-      if (more.style.maxHeight) more.style.maxHeight = null;
-      else more.style.maxHeight = more.scrollHeight + 'px';
-    });
-
-    $(document).on('click', '.item a', function(event) {
-      event.stopImmediatePropagation();
-    });
-  </script>
-
+  <script src='script.js'></script>
   <link rel='stylesheet' href='style.css'>
 </head>
 
@@ -188,8 +170,8 @@ layout: home
                   <a class='button' href='https://github.com/nalamat/ears'>Code</a>
                 </span>
               </p>
-              <p>Mentored a team of six undergraduate students towards obtaining research grants and completion of multiple projects ranging from neural signal processing and animal behavioral training to human psychoacoustics.</p>
-              <p>Assisted in setting up an entire animal research lab from the ground up under supervision of Prof. Antje Ihlefeld.</p>
+              <p><span class='emphasis'>Mentored a team of six undergraduate students</span> towards obtaining research grants and completion of multiple projects ranging from neural signal processing and animal behavioral training to human psychoacoustics.</p>
+              <p><span class='emphasis'>Assisted in setting up an entire animal research lab</span> from the ground up under supervision of Prof. Antje Ihlefeld.</p>
             </div>
           </div>
 
