@@ -160,193 +160,35 @@ layout: default
 
 <section>
   <div class='card-container'>
-    <div class='card'>
-      <a href='https://github.com/nalamat/ears'>
-        <div class='card-content'>
-          <h3><img src='/images/ears.svg' style='position: relative; top: -.1em; width: 1.1em;'> EARS</h3>
-          <img src='/images/ears.png'>
-          <p>Electrophysiology Auditory Recording System</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag python'></div>
-          <div class='tag glsl'></div>
-        </div>
-      </a>
-    </div>
+    {% for item in site.data.projects %}
+      <div class='card'>
+        <a href='{{ item.link }}'>
 
-    <div class='card'>
-      <a href='https://github.com/nalamat/ephys'>
-        <div class='card-content'>
-          <h3>ePhys</h3>
-          <img src='/images/ephys.png' style='padding: 0 5%;'>
-          <p>Analysis of neural recordings from auditory cortex</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag matlab'></div>
-          <div class='tag r'></div>
-        </div>
-      </a>
-    </div>
+          <div class='card-content'>
+            <h3>
+              {% if item.logo %}
+                <img src='{{ item.logo }}' style='{{ item.logo-style }}'>
+              {% endif %}
+              {{ item.title }}
+            </h3>
 
-    <div class='card'>
-      <a href='https://github.com/nalamat/pypeline'>
-        <div class='card-content'>
-          <h3>Pypeline</h3>
-          <img src='/images/pypeline.png' style='padding: 9% 6%; padding-bottom: 3%;'>
-          <p>Object-oriented model for online processing of data streams</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag python'></div>
-        </div>
-      </a>
-    </div>
+            {% if item.image %}
+              <img src='{{ item.image }}' style='{{ item.image-style }}'>
+            {% endif %}
+            <p>{{ item.description }}</p>
+          </div>
 
-    <div class='card'>
-      <a href='https://github.com/nalamat/glplotlib'>
-        <div class='card-content'>
-          <h3>glPlotLib</h3>
-          <img src='/images/glplotlib.png'>
-          <p>Real-time GPU-accelerated plotting toolbox</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag python'></div>
-          <div class='tag glsl'></div>
-        </div>
-      </a>
-    </div>
+          {% if item.tags %}
+            <div class='card-tags'>
+              {% for tag in item.tags %}
+                <div class='tag {{ tag }}'></div>
+              {% endfor %}
+            </div>
+          {% endif %}
 
-    <div class='card'>
-      <a href='https://github.com/nalamat/mriviewer'>
-        <div class='card-content'>
-          <h3>MRI Viewer</h3>
-          <img src='/images/mriviewer.png'>
-          <p>Interactive UI for 3D analysis of MRI images</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag matlab'></div>
-        </div>
-      </a>
-    </div>
-
-    <div class='card'>
-      <a href='https://datadryad.org/stash/dataset/doi:10.5061/dryad.t8c381f'>
-        <div class='card-content'>
-          <h3>nlme.pwr</h3>
-          <img src='/images/nlme.pwr.png' style='padding: .1rem .1rem;'>
-          <p>Power analysis for Nonlinear Mixed-Effects (NLME) models</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag r'></div>
-        </div>
-      </a>
-    </div>
-
-    <div class='card'>
-      <a href='https://github.com/nalamat/circuitoptim'>
-        <div class='card-content'>
-          <h3>Circuit Optim</h3>
-          <img src='/images/circuitoptim.png' style='padding: 2% 9%; padding-bottom: 0;'>
-          <p>A circuit optimization toolbox for MATLAB</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag matlab'></div>
-          <div class='tag cad'></div>
-        </div>
-      </a>
-    </div>
-
-    <div class='card'>
-      <a href='https://github.com/nalamat/bcomp'>
-        <div class='card-content'>
-          <h3>BCOMP</h3>
-          <img src='/images/bcomp.png' style='padding: 5% 6%; padding-bottom: 0%;'>
-          <p>Gate-level simulation of the Basic computer</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag cad'></div>
-        </div>
-      </a>
-    </div>
-
-    <div class='card'>
-      <a href='https://github.com/nalamat/basm'>
-        <div class='card-content'>
-          <h3>BASM</h3>
-          <img src='/images/basm.png'>
-          <p>The Basic computer assembler</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag cpp'></div>
-        </div>
-      </a>
-    </div>
-
-    <div class='card'>
-      <a href='https://github.com/nalamat/easydaqmx'>
-        <div class='card-content'>
-          <h3>EasyDAQmx</h3>
-          <img src='/images/easydaqmx.jpg'>
-          <p>No-brainer object-oriented interface for NI DAQ devices</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag python'></div>
-        </div>
-      </a>
-    </div>
-
-    <div class='card'>
-      <a href='javascript:;'>
-        <div class='card-content'>
-          <h3>Audio Calibration</h3>
-          <img src='/images/audio-calibration.jpg'>
-          <p>Toolbox for calibrating frequency response of audio playback systems</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag python'></div>
-          <div class='tag matlab'></div>
-        </div>
-      </a>
-    </div>
-
-    <div class='card'>
-      <a href='https://github.com/nalamat/avroscope'>
-        <div class='card-content'>
-          <h3>AVROscope</h3>
-          <p>A low-cost low-frequency USB oscilloscope using Atmel AVR microcontroller</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag cpp'></div>
-          <div class='tag cs'></div>
-          <div class='tag cad'></div>
-        </div>
-      </a>
-    </div>
-
-    <div class='card'>
-      <a href='https://github.com/nalamat/ajaxify-wp'>
-        <div class='card-content'>
-          <h3>Ajaxify WP</h3>
-          <p>Hybrid ajaxify plugin for WordPress, load pages with Ajax while keeping normal link behavior intact</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag css'></div>
-          <div class='tag js'></div>
-        </div>
-      </a>
-    </div>
-
-    <div class='card'>
-      <a href='https://github.com/nalamat/smscontroller'>
-        <div class='card-content'>
-          <h3>SMS Controller</h3>
-          <p>Remotely control home appliances with text message commands</p>
-        </div>
-        <div class='card-tags'>
-          <div class='tag cpp'></div>
-          <div class='tag cad'></div>
-        </div>
-      </a>
-    </div>
+        </a>
+      </div>
+    {% endfor %}
   </div>
 </section>
 
@@ -356,13 +198,16 @@ layout: default
 <section>
   {% for item in site.data.publications %}
     <div class='item {% if item.abstract %} arrow {% endif %}'>
+
       <h3>{{ item.title }}</h3>
+
       <div class='cols'>
         <div>
           {{ item.authors }}
           <br>
           {{ item.publisher }}
         </div>
+
         <div class='buttons'>
           {% for link in item.links %}
             {% if link[1] and link[0] != 'DOI' %}
@@ -371,9 +216,11 @@ layout: default
           {% endfor %}
         </div>
       </div>
+
       <div class='more'>
         <p>{{ item.abstract }}</p>
       </div>
+
     </div>
   {% endfor %}
 </section>
