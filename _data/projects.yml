@@ -1,0 +1,148 @@
+- title: EARS
+  link: https://github.com/nalamat/ears
+  description: Electrophysiology Auditory Recording System
+  logo: /images/ears.svg
+  logo-style: 'position: relative; top: -.1em; width: 1.1em;'
+  image: /images/ears.png
+  image-style:
+  tags:
+    - python
+    - glsl
+
+- title: ePhys
+  link: https://github.com/nalamat/ephys
+  description: Analysis of neural recordings from auditory cortex
+  logo:
+  logo-style:
+  image: /images/ephys.png
+  image-style: 'padding: 0 5%;'
+  tags:
+    - matlab
+    - r
+
+- title: Pypeline
+  link: https://github.com/nalamat/pypeline
+  description: Object-oriented model for online processing of data streams
+  logo:
+  logo-style:
+  image: /images/pypeline.png
+  image-style: 'padding: 9% 6%; padding-bottom: 3%;'
+  tags:
+    - python
+
+- title: glPlotLib
+  link: https://github.com/nalamat/glplotlib
+  description: Real-time GPU-accelerated plotting toolbox
+  logo:
+  logo-style:
+  image: /images/glplotlib.png
+  image-style:
+  tags:
+    - python
+    - glsl
+
+- title: MRI Viewer
+  link: https://github.com/nalamat/mriviewer
+  description: Interactive UI for 3D analysis of MRI images
+  logo:
+  logo-style:
+  image: /images/mriviewer.png
+  image-style:
+  tags:
+    - matlab
+
+- title: nlme.pwr
+  link: https://datadryad.org/stash/dataset/doi:10.5061/dryad.t8c381f
+  description: Power analysis for Nonlinear Mixed-Effects (NLME) models
+  logo:
+  logo-style:
+  image: /images/nlme.pwr.png
+  image-style: 'padding: .1rem .1rem;'
+  tags:
+    - r
+
+- title: Circuit Optim
+  link: https://github.com/nalamat/circuitoptim
+  description: A circuit optimization toolbox for MATLAB
+  logo:
+  logo-style:
+  image: /images/circuitoptim.png
+  image-style: 'padding: 2% 9%; padding-bottom: 0;'
+  tags:
+    - matlab
+    - cad
+
+- title: BCOMP
+  link: https://github.com/nalamat/bcomp
+  description: Gate-level simulation of the Basic computer
+  logo:
+  logo-style:
+  image: /images/bcomp.png
+  image-style: 'padding: 5% 6%; padding-bottom: 0%;'
+  tags:
+    - cad
+
+- title: BASM
+  link: https://github.com/nalamat/basm
+  description: The Basic computer assembler
+  logo:
+  logo-style:
+  image: /images/basm.png
+  image-style:
+  tags:
+    - cpp
+
+- title: EasyDAQmx
+  link: https://github.com/nalamat/easydaqmx
+  description: No-brainer object-oriented interface for NI DAQ devices
+  logo:
+  logo-style:
+  image: /images/easydaqmx.jpg
+  image-style:
+  tags:
+    - python
+
+- title: Sound Calibration
+  link: 'javascript:;'
+  description: Toolbox for calibrating frequency response of audio playback systems
+  logo:
+  logo-style:
+  image: /images/audio-calibration.jpg
+  image-style:
+  tags:
+    - python
+    - matlab
+
+- title: AVROscope
+  link: https://github.com/nalamat/avroscope
+  description: A low-cost low-frequency USB oscilloscope using Atmel AVR microcontroller
+  logo:
+  logo-style:
+  image:
+  image-style:
+  tags:
+    - cpp
+    - cs
+    - cad
+
+- title: Ajaxify WP
+  link: https://github.com/nalamat/ajaxify-wp
+  description: Hybrid ajaxify plugin for WordPress, load pages with Ajax while keeping normal link behavior intact
+  logo:
+  logo-style:
+  image:
+  image-style:
+  tags:
+    - css
+    - js
+
+- title: SMS Controller
+  link: https://github.com/nalamat/smscontroller
+  description: Remotely control home appliances with text message commands
+  logo:
+  logo-style:
+  image:
+  image-style:
+  tags:
+    - cpp
+    - cad
