@@ -81,6 +81,7 @@ header h1 { /* for website title */
 header h2 {
   margin: 3rem 0;
   font-size: 1.5rem;
+  line-height: 1.5em;
   /* font-weight: bold; */
 }
 .favicons {
@@ -128,10 +129,13 @@ main {
   overflow-y: scroll;
   color: rgb(0,0,50);
 }
-main h2 {
-  margin-top: 1.5rem;
+main h1 {
+  margin-bottom: 1rem;
+}
+main h2.portfolio {
+  margin: 1.5rem -.75rem;
   margin-bottom: .5rem;
-  padding: .5rem 1rem;
+  padding: .5rem .75rem;
   /* text-align: center; */
   border-radius: var(--corners);
   font-size: 2rem;
@@ -147,8 +151,11 @@ p {
   text-align: justify;
   clear: right;
 }
+ul {
+  margin-left: 1em;
+}
 section {
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
 .item {
   margin: 0 -.5rem;
@@ -399,7 +406,7 @@ section {
     height: auto;
   }
   main {
-    padding: 5% 5%;
+    padding: 1rem 1.5rem;
     overflow-y: visible;
   }
 
