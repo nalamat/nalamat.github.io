@@ -338,35 +338,45 @@ section {
   margin: .25rem;
 }
 .tag {
+  display: inline-block;
   margin: .25rem;
-  padding: .2rem .4rem;
-  border-radius: var(--corners);
+  /* padding: .2rem .4rem; */
+  /* border-radius: var(--corners); */
   font-size: .9rem;
+  /* background: rgb(80,80,200); */
+  /* color: white; */
+  /* opacity: .6; */
+  /* transition: opacity var(--anim); */
+}
+.tag:before {
+  content: '';
+  display: inline-block;
+  margin-right: .25em;
+  width: .6em;
+  height: .6em;
+  border-radius: 50%;
   background: rgb(80,80,200);
-  color: white;
-  opacity: .6;
-  transition: opacity var(--anim);
 }
-.card:hover .tag {
+/* .card:hover .tag {
   opacity: 1;
-}
-.tag.python { background: #4B8BBE; }
+} */
+.tag.python:before { background: #4B8BBE; }
 .tag.python:after { content: 'Python'; }
-.tag.glsl { background: rgb(84, 130, 158); }
+.tag.glsl:before { background: rgb(84, 130, 158); }
 .tag.glsl:after { content: 'GLSL'; }
-.tag.matlab { background: rgb(220, 90, 40); }
+.tag.matlab:before { background: rgb(220, 90, 40); }
 .tag.matlab:after { content: 'MATLAB'; }
-.tag.r { background: rgb(34, 100, 174); }
+.tag.r:before { background: rgb(34, 100, 174); }
 .tag.r:after { content: 'R'; }
-.tag.cpp { background: rgb(23, 164, 71); }
+.tag.cpp:before { background: rgb(23, 164, 71); }
 .tag.cpp:after { content: 'C++'; }
-.tag.cad { background: rgb(120, 140, 80); }
+.tag.cad:before { background: rgb(120, 140, 80); }
 .tag.cad:after { content: 'CAD'; }
-.tag.cs { background: rgb(151, 107, 203); }
+.tag.cs:before { background: rgb(151, 107, 203); }
 .tag.cs:after { content: 'C#'; }
-.tag.css { background: rgb(33, 113, 179); }
+.tag.css:before { background: rgb(33, 113, 179); }
 .tag.css:after { content: 'CSS'; }
-.tag.js { background: rgb(219, 155, 52); }
+.tag.js:before { background: rgb(219, 155, 52); }
 .tag.js:after { content: 'JavaScript'; }
 
 .nodecoration {
