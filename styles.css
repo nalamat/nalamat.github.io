@@ -151,7 +151,7 @@ p {
   text-align: justify;
   clear: right;
 }
-ul {
+ol, ul {
   margin-left: 1em;
 }
 section {
