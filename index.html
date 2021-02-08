@@ -14,62 +14,43 @@ layout: default
 <h2 class='portfolio'>Education</h2>
 
 <section>
-  <div class='item arrow'>
-    <div class='cols'>
-      <div><b>Ph.D. in Biomedical Engineering</b></div>
-      <div class='info'>Sep 2015 - 2021 (Exp)</div>
-    </div>
-    <div class='cols'>
-      <div><a class='nodecoration' href='https://njit.edu'>New Jersey Institute of Technology</a></div>
-      <div class='info'>Newark, NJ</div>
-    </div>
+  {% for item in site.data.education %}
+    <div class='item {% if item.description %} arrow {% endif %}'>
 
-    <div class='more'>
-      Received the <a class='emphasis' href='https://engineering.njit.edu/students-awards'>2020 NCE Outstanding Graduate Student Award</a>
-      <br>
-      Focus: Computational neuroscience, data science, signal processing of brain waves, statistical modeling
-      <br>
-      Dissertation: “Towards Understanding the Role of Central Processing in Release from Masking”
-      <br>
-      Advisor: Prof. Antje Ihlefeld
-    </div>
-  </div>
+      <div class='cols'>
+        <div><b>
+          {% if item.program-link %}
+            <a class='nodecoration' href='{{ item.program-link }}'>
+              {{ item.title }}
+            </a>
+          {% else %}
+            {{ item.title }}
+          {% endif %}
+        </b></div>
+        <div class='info'>{{ item.date }}</div>
+      </div>
 
-  <div class='item arrow'>
-    <div class='cols'>
-      <div><b><a class='nodecoration' href='https://micromasters.mit.edu/ds/'>MicroMasters in Statistics & Data Science</a></b></div>
-      <div class='info'>Sep 2019 - 2021 (Exp)</div>
-    </div>
-    <div class='cols'>
-      <div><a class='nodecoration' href='https://mit.edu'>Massachusetts Institute of Technology</a></div>
-      <div class='info'>Online</div>
-    </div>
+      <div class='cols'>
+        <div>
+          {% if item.university-link %}
+            <a class='nodecoration' href='{{ item.university-link }}'>
+              {{ item.university }}
+            </a>
+          {% else %}
+            {{ item.university }}
+          {% endif %}
+        </div>
+        <div class='info'>{{ item.location }}</div>
+      </div>
 
-    <div class='more'>
-      Program offered by MIT on the edX platform
-      <br>
-      Focus: Probability, data analysis, statistics and machine learning
-    </div>
-  </div>
+      <div class='more'>
+        {% for paragraph in item.description %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
 
-  <div class='item arrow'>
-    <div class='cols'>
-      <div><b>B.S. in Electrical Engineering</b></div>
-      <div class='info'>Sep 2009 - Sep 2013</div>
     </div>
-    <div class='cols'>
-      <div><a class='nodecoration' href='https://ui.ac.ir/EN'>University of Isfahan</a></div>
-      <div class='info'>Isfahan, Iran</div>
-    </div>
-
-    <div class='more'>
-      <span class='emphasis'>Summa cum laude:</span> Ranked 1st among all Electrical Engineering undergraduate students
-      <br>
-      Microchip design, multi-objective optimization, genetic algorithm, parallelized simulation
-      <br>
-      Thesis: “Design of a Safe Low-Power Neural Micro-Stimulator with Gaussian Waveform”
-    </div>
-  </div>
+  {% endfor %}
 </section>
 
 
