@@ -57,105 +57,27 @@ layout: default
 <h2 class='portfolio'>Experience</h2>
 
 <section>
-  <div class='item arrow'>
-    <div class='cols'>
-      <div><b>Graduate Research Assistant</b></div>
-      <div class='info'>Sep 2015 - Current</div>
-    </div>
-    <div class='cols'>
-      <div><a class='nodecoration' href='http://ihlefeldlab.com'>NESH Laboratory</a>, New Jersey Institute of Technology</div>
-      <div class='info'>Newark, NJ</div>
-    </div>
-    <div class='more'>
-      <p>
-        By non-linear mixed-effects (NLME) modeling of human sound localization data we uncovered level dependence of perceived sound direction and proposed a unified computational model, overhauling the established view in the field. Further mining of the data has revealed even more interesting effects of short- and long-term adaptation when localizing with interaural time differences. Analysis in R with nlme package.
-        <span class='float-right'>
-          <a class='button' href='https://doi.org/10.7554/eLife.47027'>Link</a>
-          <a class='button' href='https://doi.org/10.5061/dryad.t8c381f'>Code</a>
-        </span>
-      </p>
-      <p>
-        We discovered a reversal in coding scheme of target sounds in presence of background interference (the cocktail party problem) at negative signal-to-noise ratios using a combination of signal processing, pattern recognition, unsupervised and supervised learning methods to process electrical activity of neurons.
-        <span class='float-right'>
-          <a class='button' href='https://github.com/nalamat/ephys'>Code</a>
-        </span>
-      </p>
-      <p>
-        Electrophysiology Auditory Recording System (EARS) project: I wrote an open source package in Python and GLSL (OpenGL Shading Language) for online processing, visualization and recording of brain signals, synchronized in microseconds with behavior of animals while implanted with microelectrodes.
-        <span class='float-right'>
-          <a class='button' href='https://github.com/nalamat/ears'>Code</a>
-        </span>
-      </p>
-      <p><span class='emphasis'>Mentored a team of six undergraduate students</span> towards obtaining research grants and completion of multiple projects ranging from neural signal processing and animal behavioral training to human psychoacoustics.</p>
-      <p><span class='emphasis'>Assisted in setting up an entire animal research lab</span> from the ground up under supervision of Prof. Antje Ihlefeld.</p>
-    </div>
-  </div>
+  {% for item in site.data.experience %}
+    <div class='item {% if item.description %} arrow {% endif %}'>
 
-  <div class='item arrow'>
-    <div class='cols'>
-      <div><b>Adjunct Instructor</b></div>
-      <div class='info'>May 2020 - Jul 2020</div>
-    </div>
-    <div class='cols'>
-      <div>Biomedical Engineering Department, New Jersey Institute of Technology</div>
-      <div class='info'>Newark, NJ</div>
-    </div>
-    <div class='more'>
-      <p>Instructed BME 301: Electrical Fundamentals of Biomedical Engineering.</p>
-      <p>
-        For optimal learning experience during the COVID pandemic, Dr. Ihlefeld and I designed a remote laboratory curriculum for students to experiment with electrical circuits at home using commodity equipment.
-        <span class='float-right'>
-          <a class='button' href='https://github.com/nalamat/njit-bme-301'>Link</a>
-        </span>
-      </p>
-    </div>
-  </div>
+      <div class='cols'>
+        <div><b>{{ item.title }}</b></div>
+        <div class='info'>{{ item.date }}</div>
+      </div>
 
-  <div class='item arrow'>
-    <div class='cols'>
-      <div><b>Graduate Research Assistant</b></div>
-      <div class='info'>Jan 2016 - Jun 2016</div>
-    </div>
-    <div class='cols'>
-      <div><a class='nodecoration' href='https://sites.rutgers.edu/pare-lab/'>Laboratory of Denis Paré</a>, Rutgers University</div>
-      <div class='info'>Newark, NJ</div>
-    </div>
-    <div class='more'>
-      <p>Custom implementation of the K-SVD unsupervised dictionary learning (inspired by image processing literature) in combination with matching pursuit and Gabor atom decomposition for analysis of brain waves and unsupervised recognition of sparse events. Initially written in Matlab, reimplemented in C++ with CUDA GPU acceleration.</p>
-    </div>
-  </div>
+      <div class='cols'>
+        <div>{{ item.company }}</div>
+        <div class='info'>{{ item.location }}</div>
+      </div>
 
-  <div class='item arrow'>
-    <div class='cols'>
-      <div><b>Research & Development Engineer</b></div>
-      <div class='info'>May 2013 - May 2014</div>
-    </div>
-    <div class='cols'>
-      <div><a class='nodecoration' href='https://novinmed.com/?lang=en'>Novin Medical Engineering Co.</a></div>
-      <div class='info'>Isfahan, Iran</div>
-    </div>
-    <div class='more'>
-      <p>Embedded systems and software development.</p>
-      <p>Design of a modern ARM-based platform running on Windows Embedded along with a software framework and touch graphical user interface written in C# for the next generation devices of Novin Company.</p>
-      <p>Low level drivers written in C++ facilitating real-time interaction of the software framework with different hardware peripherals for stimulator, interferential, laser and magnet therapy devices.</p>
-      <p>High speed transfer of real-time data from an ARM microcontroller to another microcontroller or PC via the bulk transfer protocol of universal serial bus (USB) written in C++.</p>
-    </div>
-  </div>
+      <div class='more'>
+        {% for paragraph in item.description %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
 
-  <div class='item arrow'>
-    <div class='cols'>
-      <div><b>Cofounder & Lead Engineer</b></div>
-      <div class='info'>Jul 2012 - March 2014</div>
     </div>
-    <div class='cols'>
-      <div>Mahoor Engineering Co. (Startup)</div>
-      <div class='info'>Isfahan Sci. & Tech. Town, Iran</div>
-    </div>
-    <div class='more'>
-      <p>Electronic circuit design and software development.</p>
-      <p>Proposed and partially implemented a robotic system with two arms for automation of steel processing laboratory of Mobarakeh Steel Company (Isfahan, Iran). Data from a PrimeSense depth camera installed on the first robotic arm combined with inverse kinematics was utilized to scan and construct a 3D cloud point of steel samples and the lab environment. This information was further used to automate steel sample preparation via rule-based artificial intelligence implemented on the second arm.</p>
-    </div>
-  </div>
+  {% endfor %}
 </section>
 
 
