@@ -1,5 +1,9 @@
 - title: Graduate Research Assistant
-  company: <a class='nodecoration' href='http://ihlefeldlab.com'>NESH Laboratory</a>, New Jersey Institute of Technology
+  company:
+    <a class='nodecoration' href='http://ihlefeldlab.com'>
+    NESH Laboratory</a>,
+    <a class='nodecoration' href='https://njit.edu'>
+    New Jersey Institute of Technology</a>
   date: Sep 2015 - Current
   location: Newark, NJ
   description:
@@ -22,7 +26,11 @@
 
 
 - title: Adjunct Instructor
-  company: Biomedical Engineering Department, New Jersey Institute of Technology
+  company:
+    <a class='nodecoration' href='https://biomedical.njit.edu'>
+    Department of Biomedical Engineering</a>,
+    <a class='nodecoration' href='https://njit.edu'>
+    New Jersey Institute of Technology</a>
   date: May 2020 - Jul 2020
   location: Newark, NJ
   description:
@@ -35,7 +43,11 @@
 
 
 - title: Graduate Research Assistant
-  company: <a class='nodecoration' href='https://sites.rutgers.edu/pare-lab/'>Laboratory of Denis Paré</a>, Rutgers University
+  company:
+    <a class='nodecoration' href='https://sites.rutgers.edu/pare-lab/'>
+    Laboratory of Denis Paré</a>,
+    <a class='nodecoration' href='https://rutgers.edu'>
+    Rutgers University</a>
   date: Jan 2016 - Jun 2016
   location: Newark, NJ
   description:
