@@ -18,28 +18,12 @@ layout: default
     <div class='item {% if item.description %} arrow {% endif %}'>
 
       <div class='cols'>
-        <div><b>
-          {% if item.program-link %}
-            <a class='nodecoration' href='{{ item.program-link }}'>
-              {{ item.title }}
-            </a>
-          {% else %}
-            {{ item.title }}
-          {% endif %}
-        </b></div>
+        <div><b>{{ item.title }}</b></div>
         <div class='info'>{{ item.date }}</div>
       </div>
 
       <div class='cols'>
-        <div>
-          {% if item.university-link %}
-            <a class='nodecoration' href='{{ item.university-link }}'>
-              {{ item.university }}
-            </a>
-          {% else %}
-            {{ item.university }}
-          {% endif %}
-        </div>
+        <div>{{ item.university }}</div>
         <div class='info'>{{ item.location }}</div>
       </div>
 

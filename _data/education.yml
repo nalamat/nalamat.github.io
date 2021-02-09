@@ -1,7 +1,10 @@
 - title: Ph.D. in Biomedical Engineering
-  program-link:
-  university: New Jersey Institute of Technology
-  university-link: https://njit.edu
+  university:
+    <a class='nodecoration' href='https://njit.edu'>
+    New Jersey Institute of Technology</a>
+    &
+    <a class='nodecoration' href='https://rutgers.edu'>
+    Rutgers University</a>
   date: Sep 2015 - 2021 (Exp)
   location: Newark, NJ
   description:
@@ -13,10 +16,8 @@
     - >
       Advisor: Prof. Antje Ihlefeld
 
-- title: MicroMasters in Statistics & Data Science
-  program-link: https://micromasters.mit.edu/ds/
-  university: Massachusetts Institute of Technology
-  university-link: https://mit.edu
+- title: <a class='nodecoration' href='https://micromasters.mit.edu/ds/'>MicroMasters in Statistics & Data Science</a>
+  university: <a class='nodecoration' href='https://mit.edu'>Massachusetts Institute of Technology</a>
   date: Sep 2019 - 2021 (Exp)
   location: Online
   description:
@@ -25,9 +26,7 @@
       Focus: Probability, data analysis, statistics and machine learning
 
 - title: B.S. in Electrical Engineering
-  program-link:
-  university: University of Isfahan
-  university-link: https://ui.ac.ir/EN
+  university: <a class='nodecoration' href='https://ui.ac.ir/EN'>University of Isfahan</a>
   date: Sep 2009 - Sep 2013
   location: Isfahan, Iran
   description:
