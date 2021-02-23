@@ -59,6 +59,7 @@
   date: May 2013 - May 2014
   location: Isfahan, Iran
   description:
+    - Firmware development for embedded systems.
     - Design of a modern ARM-based platform running on Windows Embedded along with a software framework and touch graphical user interface written in C# for the next generation devices of Novin Company.
     - Low level drivers written in C++ facilitating real-time interaction of the software framework with different hardware peripherals for stimulator, interferential, laser and magnet therapy devices.
     - High speed transfer of real-time data from an ARM microcontroller to another microcontroller or PC via the bulk transfer protocol of universal serial bus (USB) written in C++.
@@ -69,5 +70,5 @@
   date: Jul 2012 - March 2014
   location: Isfahan Sci. & Tech. Town, Iran
   description:
-    - Electronic circuit design and software development.
+    - Software development and electronic circuit design.
     - Proposed and partially implemented a robotic system with two arms for automation of steel processing laboratory of Mobarakeh Steel Company (Isfahan, Iran). Data from a PrimeSense depth camera installed on the first robotic arm combined with inverse kinematics was utilized to scan and construct a 3D cloud point of steel samples and the lab environment. This information was further used to automate steel sample preparation via rule-based artificial intelligence implemented on the second arm.

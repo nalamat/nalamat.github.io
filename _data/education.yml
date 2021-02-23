@@ -16,8 +16,13 @@
     - >
       Advisor: Prof. Antje Ihlefeld
 
-- title: <a class='nodecoration' href='https://micromasters.mit.edu/ds/'>MicroMasters in Statistics & Data Science</a>
-  university: <a class='nodecoration' href='https://mit.edu'>Massachusetts Institute of Technology</a>
+
+- title:
+    <a class='nodecoration' href='https://micromasters.mit.edu/ds/'>
+    MicroMasters in Statistics & Data Science</a>
+  university:
+    <a class='nodecoration' href='https://mit.edu'>
+    Massachusetts Institute of Technology</a>
   date: Sep 2019 - 2021 (Exp)
   location: Online
   description:
@@ -25,8 +30,11 @@
     - >
       Focus: Probability, data analysis, statistics and machine learning
 
+
 - title: B.S. in Electrical Engineering
-  university: <a class='nodecoration' href='https://ui.ac.ir/EN'>University of Isfahan</a>
+  university:
+    <a class='nodecoration' href='https://ui.ac.ir/EN'>
+    University of Isfahan</a>
   date: Sep 2009 - Sep 2013
   location: Isfahan, Iran
   description:
