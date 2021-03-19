@@ -1,3 +1,8 @@
+- title: Data Science Intern
+  company: Spotify Inc.
+  date: Summer 2021
+  location: New York, NY
+
 - title: Graduate Research Assistant
   company:
     <a class='nodecoration' href='http://ihlefeldlab.com'>
@@ -56,12 +61,19 @@
 
 - title: Software Engineer
   company: Research & Development, <a class='nodecoration' href='https://novinmed.com/?lang=en'>Novin Medical Engineering Co.</a>
-  date: May 2013 - May 2014
+  date: Jul 2013 - May 2014
   location: Isfahan, Iran
   description:
     - Firmware development for embedded systems.
     - Design of a modern ARM-based platform running on Windows Embedded along with a software framework and touch graphical user interface written in C# for the next generation devices of Novin Company.
     - Low level drivers written in C++ facilitating real-time interaction of the software framework with different hardware peripherals for stimulator, interferential, laser and magnet therapy devices.
+
+
+- title: Software Engineer Intern
+  company: Research & Development, <a class='nodecoration' href='https://novinmed.com/?lang=en'>Novin Medical Engineering Co.</a>
+  date: May 2013 - Jun 2013
+  location: Isfahan, Iran
+  description:
     - High speed transfer of real-time data from an ARM microcontroller to another microcontroller or PC via the bulk transfer protocol of universal serial bus (USB) written in C++.
 
 
