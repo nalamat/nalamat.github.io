@@ -1,16 +1,26 @@
-- title: Hemodynamic responses link individual differences in informational masking to the vicinity of superior temporal gyrus
+- title: Hemodynamic Responses Link Individual Differences in Informational Masking to the Vicinity of Superior Temporal Gyrus
   authors: M Zhang, <b>N Alamatsaz</b>, A Ihlefeld
-  publisher: <i>bioRxiv</i>, 2020
+  publisher: <i>Frontiers in Neuroscience</i>, 2021
   links:
-    Link: https://biorxiv.org/content/10.1101/2020.08.21.261222v1.abstract
-    PDF: https://biorxiv.org/content/biorxiv/early/2020/08/23/2020.08.21.261222.full.pdf
-    DOI: https://doi.org/10.1101/2020.08.21.261222
+    Link: https://www.frontiersin.org/articles/10.3389/fnins.2021.675326/full
+    PDF: https://www.frontiersin.org/articles/10.3389/fnins.2021.675326/pdf
+    DOI: https://doi.org/10.3389/fnins.2021.675326
     Code:
-  abstract: 'Suppressing unwanted background sound is crucial for aural communication. Public spaces often contain a particularly disruptive background sound, called informational masking (IM). At present, IM is identified operationally: when a target should be audible, based on suprathreshold target/masker energy ratios, yet cannot be heard because perceptually similar background sound interferes. Here, behavioral experiments combined with functional near infrared spectroscopy identify brain regions that predict individual vulnerability to IM. Results show that tasked-evoked blood oxygenation changes near the superior temporal gyrus (STG) and behavioral speech detection performance covary for same-ear IM background sound, suggesting that the STG is part of an IM-dependent network. Moreover, listeners who are more vulnerable to IM show an increased metabolic need for oxygen near STG. In contrast, task-evoked responses in a region of lateral frontal cortex, the caudal inferior frontal sulcus (cIFS), do not predict behavioral sensitivity, suggesting that the cIFS belongs to an IM-independent network.'
+  abstract: 'Suppressing unwanted background sound is crucial for aural communication. A particularly disruptive type of background sound, informational masking (IM), often interferes in social settings. However, IM mechanisms are incompletely understood. At present, IM is identified operationally: when a target should be audible, based on suprathreshold target/masker energy ratios, yet cannot be heard because target-like background sound interferes. We here confirm that speech identification thresholds differ dramatically between low- vs. high-IM background sound. However, speech detection thresholds are comparable across the two conditions. Moreover, functional near infrared spectroscopy recordings show that task-evoked blood oxygenation changes near the superior temporal gyrus (STG) covary with behavioral speech detection performance for high-IM but not low-IM background sound, suggesting that the STG is part of an IM-dependent network. Moreover, listeners who are more vulnerable to IM show increased hemodynamic recruitment near STG, an effect that cannot be explained based on differences in task difficulty across low- vs. high-IM. In contrast, task-evoked responses near another auditory region of cortex, the caudal inferior frontal sulcus (cIFS), do not predict behavioral sensitivity, suggesting that the cIFS belongs to an IM-independent network. Results are consistent with the idea that cortical gating shapes individual vulnerability to IM.'
+
+# - title: Hemodynamic Responses Link Individual Differences in Informational Masking to the Vicinity of Superior Temporal Gyrus
+#   authors: M Zhang, <b>N Alamatsaz</b>, A Ihlefeld
+#   publisher: <i>bioRxiv</i>, 2020
+#   links:
+#     Link: https://biorxiv.org/content/10.1101/2020.08.21.261222v1.abstract
+#     PDF: https://biorxiv.org/content/biorxiv/early/2020/08/23/2020.08.21.261222.full.pdf
+#     DOI: https://doi.org/10.1101/2020.08.21.261222
+#     Code:
+#   abstract: 'Suppressing unwanted background sound is crucial for aural communication. Public spaces often contain a particularly disruptive background sound, called informational masking (IM). At present, IM is identified operationally: when a target should be audible, based on suprathreshold target/masker energy ratios, yet cannot be heard because perceptually similar background sound interferes. Here, behavioral experiments combined with functional near infrared spectroscopy identify brain regions that predict individual vulnerability to IM. Results show that tasked-evoked blood oxygenation changes near the superior temporal gyrus (STG) and behavioral speech detection performance covary for same-ear IM background sound, suggesting that the STG is part of an IM-dependent network. Moreover, listeners who are more vulnerable to IM show an increased metabolic need for oxygen near STG. In contrast, task-evoked responses in a region of lateral frontal cortex, the caudal inferior frontal sulcus (cIFS), do not predict behavioral sensitivity, suggesting that the cIFS belongs to an IM-independent network.'
 
 - title: Teaching Electronic Circuit Fundamentals via Remote Laboratory Curriculum
   authors: <b>N Alamatsaz</b>, A Ihlefeld
-  publisher: <i>Biomedical Engineering Education</i>, pp. 1-4, 2020
+  publisher: <i>Springer, Biomedical Engineering Education</i>, pp. 1-4, 2020
   links:
     Link: https://link.springer.com/article/10.1007/s43683-020-00008-x
     PDF: https://link.springer.com/content/pdf/10.1007/s43683-020-00008-x.pdf
@@ -29,7 +39,7 @@
   <b>Results:</b> A total of 25 single- and 8 multi-units showed a target-evoked response in their firing rate. Pooling across NoGo trials during active and passive listening, these target-responsive units were then further classified as tonic or phasic, based on whether they significantly phase-locked to the modulation rate of the masker. In both types of units, sensory information at the population level could predict behavioral sensitivity. For phasic units at 0 and 10 dB SNR, average firing rates decreased in Go vs NoGo trials, consistent with envelope locking suppression. However, at -10 dB SNR, firing rate increased during Go trials as compared to NoGo, for both tonic and phasic units, a phenomenon not predicted by envelope locking suppression. <br>
   <b>Conclusions:</b> Preliminary neurophysiological data hint that the neuronal mechanisms that enable an individual to listen in the temporary dips of background sound may differ across positive vs negative SNRs.'
 
-- title: Population rate-coding predicts correctly that human sound localization depends on sound intensity
+- title: Population Rate-Coding Predicts Correctly that Human Sound Localization Depends on Sound Intensity
   authors: A Ihlefeld, <b>N Alamatsaz</b>, RM Shapley
   publisher: <i>eLife</i>, <i>8</i>, p.e47027, 2019
   links:
@@ -39,7 +49,7 @@
     Code: https://doi.org/10.5061/dryad.t8c381f
   abstract: 'Human sound localization is an important computation performed by the brain. Models of sound localization commonly assume that sound lateralization from interaural time differences is level invariant. Here we observe that two prevalent theories of sound localization make opposing predictions. The labelled-line model encodes location through tuned representations of spatial location and predicts that perceived direction is level invariant. In contrast, the hemispheric-difference model encodes location through spike-rate and predicts that perceived direction becomes medially biased at low sound levels. Here, behavioral experiments find that softer sounds are perceived closer to midline than louder sounds, favoring rate-coding models of human sound localization. Analogously, visual depth perception, which is based on interocular disparity, depends on the contrast of the target. The similar results in hearing and vision suggest that the brain may use a canonical computation of location: encoding perceived location through population spike rate relative to baseline.'
 
-- title: Leveraging adaptation to study perceptual weighting of interaural time differences
+- title: Leveraging Adaptation to Study Perceptual Weighting of Interaural Time Differences
   authors: <b>N Alamatsaz</b>, A Ihlefeld
   publisher: <i>International Congress on Acoustics (ICA)</i>, vol. 23, no. 1, pp. 8253-8256, 2019
   links:
@@ -49,7 +59,7 @@
     Code:
   abstract: 'An important question in auditory cognition is how we perceive the location of an object in space. Converging evidence from animal models and humans suggests that when judging sound direction, the central nervous system weighs the anticipated reliability of binaural cues. Here, we used short-term adaptation to bias normal-hearing listeners towards source direction favoring either the left or the right frontal quadrant. Listeners rated perceived laterality of tokens of band-pass filtered noise (300 Hz-1200 Hz) with interaural time differences that were randomly selected from a uniform distribution spanning either -375 to 0 µs or 0 to 375 µs. Using non-linear mixed effects modeling of behavioral laterality reports, we tested how exposure to source quadrant affects how listeners weigh the reliability of interaural time differences. The cue reliability hypothesis predicts that perceived direction should be skewed, such that unreliable frontal source angles are more affected by short-term adaptation than the more reliable lateral source angles. Alternatively, short-term adaptation may affect all source angles equally, predicting an overall shift in perceived direction. Results show that frontal angles are more strongly affected by short-term adaptation than lateral angles, supporting the cue reliability hypothesis.'
 
-- title: Circling back on theories of sound localization
+- title: Circling Back on Theories of Sound Localization
   authors: A Ihlefeld, <b>N Alamatsaz</b>, RM Shapley
   publisher: <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 145, no. 3, pp. 1759, 2019
   links:
@@ -68,7 +78,7 @@
   In anechoic spaces, a given source angle in the horizontal plane typically gives rise to the same ITD, across a wide range of source distances. However, in everyday environments where background sound and reverberant energy are often present, ITDs are much less reliable indicators of source direction. This raises the possibility that when estimating source direction, a listener’s interpretation of ITD changes depending on the context of the listening environment. Indeed, previous work shows plasticity in perceived sound direction across a wide range of conditions, including ear plugging, modifications to shape of the pinnae, prolonged exposure to constant interaural delays, in presence of preceding distractors, long-term procedural learning and short-term stimulus history. However, we have an incomplete understanding of short-term adaptation of sound lateralization based on the overall range of ITDs. <br>
   Here, we randomly assigned 34 naïve normally-hearing listeners to 4 groups. Using a target-pointer matching task without visual feedback, listeners of three groups were trained on ITD lateralization for 3 sessions. A fourth naïve control group was tested without training. All 4 groups of listeners then performed a lateralization task which asked them to identify and plot the internal image of low-frequency noise tokens. For both training and testing, one trained group (RIGHT HEMI) was only presented with positive ITDs (right hemisphere), the second trained group (LEFT HEMI) only with negative ITDs (left hemisphere), and the third trained group (BOTH HEMIS) with the full range of bilateral ITDs (both hemispheres). The naïve group was tested with positive ITDs only (NAÏVE RIGHT HEMI). Listener responses across different groups and stimulus conditions were analyzed with a Nonlinear Mixed-Effects Model (NLME). Results show robust response expansion in all unilaterally tested listeners towards the contralateral side, with a larger effect for the trained groups versus the naïve. In contrast, bilaterally trained listeners did not display any response bias. Together, these results show that perceived direction adapts rapidly to stimulus space. Results will be discussed in the context of assessing spatial perception in patient groups with impaired binaural cues, including bilateral cochlear implant users and cochlear implant users with single-sided deafness.'
 
-- title: The role of central processing in modulation masking release
+- title: The Role of Central Processing in Modulation Masking Release
   authors: <b>N Alamatsaz</b>, A Ihlefeld
   publisher: <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 144, no. 3, pp. 1900, 2018
   links:
@@ -78,7 +88,7 @@
     Code:
   abstract: 'When background sound is present, hearing impaired (HI) individuals and cochlear-implant (CI) listeners typically are worse at hearing out target sound as compared to normal-hearing (NH) listeners. This perceptual deficit occurs both when the background consists of noise that fluctuates over time (“modulated”) and for stationary background noise (“unmodulated”). In addition, the difference in thresholds between tone detection in modulated and unmodulated noise, referred to as modulation masking release (MMR), is much reduced or absent in HI and CI as compared to NH. Both peripheral and central processing mechanisms contribute to MMR. We previously showed that central MMR is reduced in human CI listeners, and that sound deprivation reduces central MMR in Mongolian gerbils. Here, we began to explore the neurobiological basis of central MMR. NH gerbils were trained to hear out target tones (1 kHz) in modulated (10-Hz rectangularly gated) versus unmodulated bandlimited background noise, and chronically implanted with recording electrodes in core auditory cortex. Neural discharge was analyzed as a function of the broadband energy ratio between target and background sound to determine how different types of background sound affect neural information transmission in awake behaving gerbil. Preliminary results will be discussed in the context of how hearing loss may affect central MMR.'
 
-- title: Traffic volume reduction in smart grid networks by a cooperative intelligent interpolation technique
+- title: Traffic Volume Reduction in Smart Grid Networks by a Cooperative Intelligent Interpolation Technique
   authors: A Boustani, N Alamatsaz, <b>N Alamatsaz</b>, A Boustani
   publisher: <i>Consumer Communications & Networking Conference (CCNC)</i>, <i>15th IEEE Annual</i>, pp. 1-7, 2018
   links:
@@ -88,7 +98,7 @@
     Code:
   abstract: 'Leveraging a modern communication network, the power industry is moving towards the next generation power grid, the smart grid. This new communication-based power grid is expected to change the way electricity is generated, distributed, and transmitted to the consumers by enhancing the reliability, efficiency, sustainability, and economics of the grid. However, due to the high volume, high granularity, and frequency of the data generated by smart electricity meters, careful planning and management of this communication network is essential. Given the potential large-scale future deployment of the smart grid, power companies face possible network capacity limitations. Therefore, efficient utilization of the Smart Grid Network (SGN) should be studied. In this paper, we introduce a smart interpolation scheme for reducing the volume of information transmitted in a smart grid backhaul network without any precision reduction or loss of benefit. Utilizing concepts of Spread Spectrum Communications, smart nodes at utility control centers are able to intelligently infer omitted data and interpolate the original message. By means of extensive evaluations, we show that our scheme significantly improves network utilization and decreases volume of the traffic in a smart grid network.'
 
-- title: The effect of sound intensity on lateralization with interaural time differences
+- title: The Effect of Sound Intensity on Lateralization with Interaural Time Differences
   authors: <b>N Alamatsaz</b>, RM Shapley, A Ihlefeld
   publisher: <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3639, 2017
   links:
@@ -108,7 +118,7 @@
     Code:
   abstract: 'Recent changes to the existing power grid are expected to influence the way energy is pro-vided and consumed by customers. Advanced Metering Infrastructure (AMI) is a tool to incorporate these changes for modernizing the electricity grid. Growing energy needs are forcing government agencies and utility companies to move towards AMI systems as part of larger smart grid initiatives. The smart grid promises to enable a more reliable, sustainable, and efficient power grid by taking advantage of information and communication technologies. However, this information-based power grid can reveal sensitive private information from the user’s perspective due to its ability to gather highly-granular power consumption data. This has resulted in limited consumer acceptance and proliferation of the smart grid. Hence, it is crucial to design a mechanism to prevent the leakage of such sensitive consumer usage information in smart grid. Among different solutions for preserving consumer privacy in Smart Grid Networks (SGN), private data aggregation techniques have received a tremendous focus from security researchers. Existing privacy-preserving aggregation mechanisms in SGNs utilize cryptographic techniques, specifically homomorphic properties of public-key cryp- tosystems. Such homomorphic approaches are bandwidth-intensive (due to large output blocks they generate), and in most cases, are computationally complex. In this paper, we present a novel and efficient CDMA-based approach to achieve privacy-preserving aggregation in SGNs by utilizing ran- dom perturbation of power consumption data and with limited use of traditional cryptography. We evaluate and validate the efficiency and performance of our proposed privacy-preserving data ag-gregation scheme through extensive statistical analyses and simulations.'
 
-- title: 'Neural correlates of modulation masking release: The role of sound deprivation'
+- title: 'Neural Correlates of Modulation Masking Release: The Role of Sound Deprivation'
   authors: A Ihlefeld, M Ning, SS Chaubal, <b>N Alamatsaz</b>
   publisher: <i>The Journal of the Acoustical Society of America (ASA)</i>, vol. 141, no. 5, pp. 3894, 2017
   links:
