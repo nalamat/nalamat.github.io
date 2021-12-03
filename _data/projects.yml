@@ -20,8 +20,8 @@
     - matlab
     - r
 
-- title: Pypeline
-  link: https://github.com/nalamat/pypeline
+- title: Pype
+  link: https://github.com/nalamat/pype
   description: Object-oriented model for online processing of data streams
   logo:
   logo-style:
@@ -30,8 +30,8 @@
   tags:
     - python
 
-- title: glPlotLib
-  link: https://github.com/nalamat/glplotlib
+- title: GLPlot
+  link: https://github.com/nalamat/glplot
   description: Real-time GPU-accelerated plotting toolbox
   logo:
   logo-style:
@@ -92,8 +92,8 @@
   tags:
     - cpp
 
-- title: EasyDAQmx
-  link: https://github.com/nalamat/easydaqmx
+- title: ezDAQmx
+  link: https://github.com/nalamat/ezdaqmx
   description: No-brainer object-oriented interface for NI DAQ devices
   logo:
   logo-style:
