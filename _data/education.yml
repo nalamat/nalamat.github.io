@@ -1,16 +1,16 @@
 - title: Ph.D. in Biomedical Engineering
   university:
-    <a class='nodecoration' href='https://njit.edu'>
-    New Jersey Institute of Technology</a>
-    &
     <a class='nodecoration' href='https://rutgers.edu'>
     Rutgers University</a>
+    &
+    <a class='nodecoration' href='https://njit.edu'>
+    New Jersey Institute of Technology</a>
   date: Sep 2015 - Aug 2021
   location: Newark, NJ
   description:
     - Received the <a class='emphasis' href='https://engineering.njit.edu/students-awards'>2020 NCE Outstanding Graduate Student Award</a>
     - >
-      Focus: Computational neuroscience, data science, signal processing of brain waves, statistical modeling
+      Focus: Auditory neuroscience, data science, signal processing of brain waves, statistical modeling
     - >
       Dissertation: “Towards Understanding the Role of Central Processing in Release from Masking”
     - >
@@ -23,7 +23,7 @@
   university:
     <a class='nodecoration' href='https://mit.edu'>
     Massachusetts Institute of Technology</a>
-  date: Sep 2019 - Oct 2021 (Exp)
+  date: Sep 2019 - Oct 2021
   location: Online
   description:
     - Program offered by MIT on the edX platform
