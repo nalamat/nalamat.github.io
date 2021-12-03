@@ -188,9 +188,11 @@ section {
 }
 .item .more {
   overflow: hidden;
-  padding: 0 1rem;
+  margin: 0 .2rem;
+  padding: 0 .8rem;
   max-height: 0;    /* animated through javascript */
   color: rgb(0,0,120);
+  border-left: 1pt solid rgba(0,0,120,.4);
   transition: all var(--anim) ease-in;
 }
 .item .more.expand {
