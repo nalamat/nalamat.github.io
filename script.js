@@ -1,8 +1,13 @@
+---
+---
+
 // google analytics
+{% if jekyll.environment == "production" %}
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-W4NCHJK0BE');
+{% endif %}
 
 $(document).ready(function(event) {
   // expand .item on click
