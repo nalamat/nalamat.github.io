@@ -26,7 +26,7 @@
         <a class='button' href='https://doi.org/10.7554/eLife.47027'>Link</a>
         <a class='button' href='https://doi.org/10.5061/dryad.t8c381f'>Code</a>
       </span>
-    - We discovered a reversal in coding scheme of target sounds in presence of background interference (the cocktail party problem) at negative signal-to-noise ratios using a combination of signal processing, pattern recognition, unsupervised and supervised learning methods to process electrical activity of neurons.
+    - We discovered an increased reliance on temporal coding of target sounds in presence of background interference (the cocktail party problem) at negative signal-to-noise ratios. We used a combination of signal processing, pattern recognition, unsupervised and supervised learning methods to process electrical activity of neurons.
       <span class='float-right'>
         <a class='button' href='https://github.com/nalamat/ephys'>Code</a>
       </span>
