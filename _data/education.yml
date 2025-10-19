@@ -7,14 +7,6 @@
     New Jersey Institute of Technology</a>
   date: Sep 2015 - Aug 2021
   location: Newark, NJ
-  description:
-    - Received the <a class='emphasis' href='https://engineering.njit.edu/students-awards'>2020 NCE Outstanding Graduate Student Award</a>
-    - >
-      Focus: Auditory neuroscience, data science, signal processing of brain waves, statistical modeling
-    - >
-      Dissertation: “Towards Understanding the Role of Central Processing in Release from Masking”
-    - >
-      Advisor: Prof. Antje Ihlefeld
 
 
 - title:
@@ -25,10 +17,6 @@
     Massachusetts Institute of Technology</a>
   date: Sep 2019 - Oct 2021
   location: Online
-  description:
-    - Program offered by MIT on the edX platform
-    - >
-      Focus: Data analysis, probability, statistics, and machine learning
 
 
 - title: B.S. in Electrical Engineering
@@ -37,8 +25,3 @@
     University of Isfahan</a>
   date: Sep 2009 - Aug 2013
   location: Isfahan, Iran
-  description:
-    - <span class='emphasis'>Summa cum laude:</span> Ranked 1st among all Electrical Engineering undergraduate students
-    - Microchip design, multi-objective optimization, genetic algorithm, parallelized simulation
-    - >
-      Thesis: “Design of a Safe Low-Power Neural Micro-Stimulator with Gaussian Waveform”
